@@ -1,0 +1,11 @@
+#foot-1{
+    padding: 20px;
+        
+        background-color: #0a0e16;
+        background-image: url("/public/img/foot-bg.png");
+        background-repeat: no-repeat;
+        /* background-attachment: fixed; */
+        background-size: cover;
+        /* background-position: center; */
+        /* background-size: contain; */
+    }   

@@ -6,7 +6,7 @@ export default function Home() {
     <>
     <div>
   
-  <section id="about">
+  <section id="about"  >
     <section className="text-white body-font">
       <div className="container flex flex-wrap px-5 py-24 pb-0 mx-auto items-center">
         <div className="md:w-2/3 md:pr-12 md:py-5  md:border-b-0  md:mb-0 pb-10  ">
