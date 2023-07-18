@@ -15,6 +15,7 @@ function App() {
     <About/>
     <hr style={{border: '1px solid  #fd600c'}} />
     <Activity/>
+    <hr style={{border: '1px solid  #fd600c'}} />
     <Footer/>
     <Helmet>
     <script src="typer.js" type="text/javascript" />
