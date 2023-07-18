@@ -110,29 +110,3 @@ font-family: 'Quicksand', sans-serif;
     
 }
 
-@media only screen and (max-width: 768px){
-    .mybox{
-        width: 100px;
-        height: 100px;
-    }
-    .con-about{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        
-    }
-    .mybox1{
-        /* padding: 50px; */
-        grid-column-start:1 ;
-        grid-column-end: 2;
-    }
-    .mybox2{
-        grid-column-start:3 ;
-        grid-column-end: 4;
-    }
-    .mybox3{
-        grid-row-start: 2;
-        grid-row-end: 3;
-        grid-column-start:2 ;
-        grid-column-end: 3;
-    }
-}
