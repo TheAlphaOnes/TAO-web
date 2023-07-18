@@ -1,0 +1,19 @@
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#⭐{
+    color:#c0021a;
+    
+}
+#⭐:hover{
+    color: #535b64;
+}
+
+#nav{
+    justify-content: center;
+}
