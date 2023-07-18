@@ -8,10 +8,10 @@ export default function Navbar() {
   <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
     <nav id="nav" className="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
       <a href="#about" id="⭐" className="mr-5 hover:text-gray-600">About Us</a>
-      <a href="launches.html" className="mr-5 hover:text-gray-600">Launches</a>
-      <a href="team.html" className="mr-5 hover:text-gray-600">Team</a>
-      <a href="contact.html" className="mr-5 hover:text-gray-600">Contact Us</a>
-      <a href="projects.html" className="hover:text-gray-600">Projects</a>
+      <a href="/" className="mr-5 hover:text-gray-600">Launches</a>
+      <a href="/" className="mr-5 hover:text-gray-600">Team</a>
+      <a href="/" className="mr-5 hover:text-gray-600">Contact Us</a>
+      <a href="/" className="hover:text-gray-600">Projects</a>
     </nav>
     <a className="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center  lg:items-center lg:justify-center mb-4 md:mb-0">
       <img src="ico.png" className="w-10 h-10  " alt=''  />
