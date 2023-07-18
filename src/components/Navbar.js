@@ -13,8 +13,8 @@ export default function Navbar() {
       <a href="/" className="mr-5 hover:text-gray-600">Contact Us</a>
       <a href="/" className="hover:text-gray-600">Projects</a>
     </nav>
-    <a href='' className="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center  lg:items-center lg:justify-center mb-4 md:mb-0">
-      <img src="ico.png" className="w-10 h-10  " alt=''  />
+    <a href='/' className="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center  lg:items-center lg:justify-center mb-4 md:mb-0">
+      <img src="img/ico.png" className="w-10 h-10  " alt=''  />
       <span className="ml-3 text-xl text-white" >TheAlphaOnes</span>
     </a>
     <div className="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">

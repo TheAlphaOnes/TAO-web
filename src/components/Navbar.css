@@ -17,3 +17,8 @@ header{
 #nav{
     justify-content: center;
 }
+
+@media only screen and (max-width: 768px){
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }}

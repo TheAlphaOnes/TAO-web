@@ -7,7 +7,7 @@ body{
     padding: 0;
     margin: 0%;
     background-color: #0a0e16;
-    background-image: url("/public/bg.png");
+    background-image: url("/public/img/bg.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -25,7 +25,10 @@ html{
     height: 100vh;
 }
 
-
+/* respomsive */
+@media only screen and (max-width: 768px){
+    
+}
     
 /*  THIS THE SCROLL-BARR */
 /* width */
