@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Helmet } from "react-helmet";
 
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -18,7 +18,9 @@ export default function IndexPage() {
             <Activity />
             <hr style={{ border: '1px solid  #fd600c' }} />
             <Footer />
-            
+            <Helmet>
+                <script src="typer.js" type="text/javascript" />
+            </Helmet>
         </div>
     )
 }

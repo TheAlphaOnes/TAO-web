@@ -2,7 +2,7 @@ import React from 'react'
 import './Foother.css'
 export default function Footer() {
   return (
-    <div>
+
 <footer className="mx-auto">
   <div id="foot-1">
     <div className="mb-16 grid grid-cols-2 gap-12 pt-10 md:grid-cols-4 lg:grid-cols-6 lg:gap-8 lg:pt-12">
@@ -80,6 +80,6 @@ export default function Footer() {
 </footer>
 
 
-    </div>
+
   )
 }

@@ -1,4 +1,4 @@
-import {Helmet} from "react-helmet";
+
 import {
   Route,
   BrowserRouter,
@@ -26,9 +26,7 @@ function App() {
       <Route path="/project" element={<ProjectPage/>} />
     </Routes>
     
-    <Helmet>
-      <script src="typer.js" type="text/javascript" />
-    </Helmet>
+
     </BrowserRouter>
     </>
   );
