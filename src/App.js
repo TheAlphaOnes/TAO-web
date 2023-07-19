@@ -1,26 +1,35 @@
-import './App.css';
-import Navbar from './components/Navbar';
-import About from './components/About';
-import Home from './components/Home';
 import {Helmet} from "react-helmet";
-import Footer from './components/Footer';
-import Activity from './components/Activity';
+import {
+  Route,
+  BrowserRouter,
+  Routes
+} from "react-router-dom";
+
+import IndexPage from "./pages/IndexPage"
+import ContactPage from "./pages/ContactPage"
+import TeamPage from "./pages/TeamPage"
+import ProjectPage from "./pages/ProjectPage"
+import LaunchesPage from "./pages/LaunchesPage"
+
+import './App.css';
+
 
 function App() {
   return (
     <>
-    <Navbar/>
-    <Home/>
-    <hr style={{border: '1px solid  #fd600c'}} />
-    <About/>
-    <hr style={{border: '1px solid  #fd600c'}} />
-    <Activity/>
-    <hr style={{border: '1px solid  #fd600c'}} />
-    <Footer/>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={ <IndexPage/> } />
+      <Route path="/launches" element={ <LaunchesPage/> } />
+      <Route path="/team" element={<TeamPage/>} />
+      <Route path="/contact" element={<ContactPage/>} />
+      <Route path="/project" element={<ProjectPage/>} />
+    </Routes>
+    
     <Helmet>
-    <script src="typer.js" type="text/javascript" />
+      <script src="typer.js" type="text/javascript" />
     </Helmet>
-
+    </BrowserRouter>
     </>
   );
 }
