@@ -1,7 +1,7 @@
 
 import {
   Route,
-  BrowserRouter,
+  
   Routes
 } from "react-router-dom";
 
@@ -17,7 +17,7 @@ import './App.css';
 function App() {
   return (
     <>
-    <BrowserRouter>
+    {/* <BrowserRouter> */}
     <Routes>
       <Route path="/" element={ <IndexPage/> } />
       <Route path="/launches" element={ <LaunchesPage/> } />
@@ -27,7 +27,7 @@ function App() {
     </Routes>
     
 
-    </BrowserRouter>
+    {/* </BrowserRouter> */}
     </>
   );
 }

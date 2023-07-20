@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Foother.css'
 export default function Footer() {
   return (
@@ -40,19 +41,19 @@ export default function Footer() {
         <div className="mb-4 font-bold uppercase tracking-widest text-gray-100">Usefull Links</div>
         <nav className="flex flex-col gap-4">
           <div>
-            <a rel="noreferrer" href="/" className="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Contact Us</a>
+            <Link to="/contact" rel="noreferrer"  className="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Contact Us</Link>
           </div>
           <div>
-            <a rel="noreferrer" href="/" className="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Launches</a>
+            <Link to="/launches" rel="noreferrer"  className="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Launches</Link>
           </div>
           <div>
-            <a rel="noreferrer" href="/" className="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Projects</a>
+            <Link to="/project" rel="noreferrer"  className="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Projects</Link>
           </div>
           <div>
-            <a rel="noreferrer" href="/" className="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Team</a>
+            <Link to="/team" rel="noreferrer"  className="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Team</Link>
           </div>
           <div>
-            <a rel="noreferrer" href="/" className="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Blog</a>
+            <Link to="/blog" rel="noreferrer"  className="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Blog</Link>
           </div>
         </nav>
       </div>
