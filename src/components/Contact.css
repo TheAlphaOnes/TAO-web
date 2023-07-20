@@ -1,0 +1,11 @@
+.title-gradent{
+    background: linear-gradient(227.38deg, #E71D36 40% , #F46036 60% );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.text-red{
+    color: #E71D36;
+}
