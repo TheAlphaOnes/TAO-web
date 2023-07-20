@@ -14,10 +14,10 @@ export default function Contact() {
       <div class="xl:w-1/4 m-2 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
         <h2 class="text-lg sm:text-xl title-gradent font-medium title-font mb-2">Social Media's</h2>
         <p class="leading-relaxed text-base mb-4"><span  class="text-indigo-500 inline-flex items-center">
-          <Link to="https://www.instagram.com/TheAlphaOnes/" target='_blank' ><img className='m-2' src='/img/insta-foot.svg' /></Link>
-          <Link to="https://github.com/TheAlphaOnes/" target='_blank' ><img className='m-2' src='/img/github-foot.svg' /></Link>
-          <Link to="https://twitter.com/TheAlphaOnesDev" target='_blank' ><img className='m-2' src='/img/twt.svg' /></Link>
-          <Link to="https://discord.com/invite/nbrFDHmsK3" target='_blank' ><img className='m-2' src='/img/cord-foot.svg' /></Link>
+          <Link to="https://www.instagram.com/TheAlphaOnes/" target='_blank' ><img alt='' className='m-2' src='/img/insta-foot.svg' /></Link>
+          <Link to="https://github.com/TheAlphaOnes/" target='_blank' ><img alt='' className='m-2' src='/img/github-foot.svg' /></Link>
+          <Link to="https://twitter.com/TheAlphaOnesDev" target='_blank' ><img alt='' className='m-2' src='/img/twt.svg' /></Link>
+          <Link to="https://discord.com/invite/nbrFDHmsK3" target='_blank' ><img alt='' className='m-2' src='/img/cord-foot.svg' /></Link>
         </span>
         </p>
       </div>
