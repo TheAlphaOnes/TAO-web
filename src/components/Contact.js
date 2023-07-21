@@ -41,7 +41,7 @@ export default function Contact() {
         <p class="leading-relaxed text-base mb-4"><span  class="text-white  items-center">
           <Link to="mailto:thealphaones.dev@gmail.com" target='_blank' className='hover:text-red-500' >- thealphaones.dev@gmail.com</Link><br/>
           <Link to="mailto:thenormvg@gmail.com" target='_blank' className='hover:text-red-500' >- thenormvg@gmail.com</Link><br/>
-          <Link to="mailto:" target='_blank' className='hover:text-red-500' >- @gmail.com</Link><br/>
+          <Link to="mailto:thebitpixel.alpha@gmail.com" target='_blank' className='hover:text-red-500' >- thebitpixel.alpha@gmail.com</Link><br/>
 
         </span>
         </p>

@@ -11,8 +11,8 @@ export default function Navbar() {
       <a href="#about" id="⭐" className="mr-5 hover:text-gray-600">About Us</a>
       <Link to="/launches" className="mr-5 hover:text-gray-600">Launches</Link>
       <Link to="/team" className="mr-5 hover:text-gray-600">Team</Link>
+      <Link to="/project" className="mr-5 hover:text-gray-600">Projects</Link>
       <Link to="/contact" className="mr-5 hover:text-gray-600">Contact Us</Link>
-      <Link to="/project" className="hover:text-gray-600">Projects</Link>
     </nav>
     <a href='/' className="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center  lg:items-center lg:justify-center mb-4 md:mb-0">
       <img src="img/ico.png" className="w-10 h-10  " alt=''  />
@@ -40,8 +40,8 @@ export  function NavbarCustom() {
       <Link to="/" id="⭐" className="mr-5 hover:text-gray-600">About Us</Link>
       <Link to="/launches" className="mr-5 hover:text-gray-600">Launches</Link>
       <Link to="/team" className="mr-5 hover:text-gray-600">Team</Link>
+      <Link to="/project" className="mr-5 hover:text-gray-600">Projects</Link>
       <Link to="/contact" className="mr-5 hover:text-gray-600">Contact Us</Link>
-      <Link to="/project" className="hover:text-gray-600">Projects</Link>
     </nav>
     <a href='/' className="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center  lg:items-center lg:justify-center mb-4 md:mb-0">
       <img src="img/ico.png" className="w-10 h-10  " alt=''  />

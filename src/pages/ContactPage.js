@@ -7,7 +7,11 @@ import "./ContactPage.css"
 
 export default function ContactPage() {
   return (
-    <div>
+    <div Style = {{
+      backgroundImage:
+      'url("img/contact-bg.svg")',
+    }}>
+     
       <Navbar/>
       <Contact/>
       <Footer/>
