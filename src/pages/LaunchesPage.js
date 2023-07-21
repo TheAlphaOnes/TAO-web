@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import Launches from '../components/Launches';
 
 import { Helmet } from "react-helmet";
-import "./CommonPage.css"
+
 
 export default function LaunchesPage() {
   return (

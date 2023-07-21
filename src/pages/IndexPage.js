@@ -8,7 +8,7 @@ import Home from '../components/Home';
 import Activity from '../components/Activity';
 
 
-import "./CommonPage.css"
+
 
 export default function IndexPage() {
     return (
