@@ -1,112 +1,112 @@
-
-#about{
-    background: #0a0e16 ;
+#about {
+  background: #0a0e16;
 }
 
-
-
-.mybox{
-    background-color: #141B2D;
-    max-width: 285px;
-    min-width: 260px;
-    min-height: 345px;
-    max-height: 350px;
-    aspect-ratio:4/5;
-    flex-shrink: 0;
-    background-size:contain;
-    background-repeat: no-repeat;
-    box-shadow: 20px 20px 50px 5px black;
-    /* max-height: ; */
-    /* background-color: #141B2D; */
+.mybox {
+  background-color: #141b2d;
+  max-width: 285px;
+  min-width: 260px;
+  min-height: 345px;
+  max-height: 350px;
+  aspect-ratio: 4/5;
+  flex-shrink: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-shadow: 20px 20px 50px 5px black;
+  /* max-height: ; */
+  /* background-color: #141B2D; */
 }
 
-#about-title{
-    background: linear-gradient(227.38deg, #E71D36 , #F46036 ,#E71D36 , #E71D36, #F46036 );
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    font-family: 'Roboto', sans-serif;
+#about-title {
+  background: linear-gradient(
+    227.38deg,
+    #e71d36,
+    #f46036,
+    #e71d36,
+    #e71d36,
+    #f46036
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-family: "Roboto", sans-serif;
 
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 49px;
-}
-
-.about-num-det{
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
-    text-align: center;
-    color: #FFFFFF;
-    text-align: center;
-    
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
 }
 
-#about-title-dic{
-
-    font-style: normal;
-font-weight: 400;
-font-size: 19px;
-line-height: 24px;
-font-family: 'Quicksand', sans-serif;
-
+.about-num-det {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  color: #ffffff;
+  text-align: center;
 }
 
-.title-about-num{
-    background: linear-gradient(227.38deg, #E71D36 , #F46036 ,#E71D36 , #E71D36, #F46036 );
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    font-family: 'Roboto', sans-serif;
-    font-style:normal;
-    font-weight: 900;
-    font-size: 15px;
-    line-height: 16px;
-    text-align: center;
-}
-#intro-box-con{
-    padding: 30px;
-    padding-bottom: 70px;
-    display: flex;
-    gap: 90px;
-    justify-content: center;
+#about-title-dic {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 24px;
+  font-family: "Quicksand", sans-serif;
 }
 
-#intro-box-1{
-    background-image: url('/public/img/tab1.svg');
+.title-about-num {
+  background: linear-gradient(
+    227.38deg,
+    #e71d36,
+    #f46036,
+    #e71d36,
+    #e71d36,
+    #f46036
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 16px;
+  text-align: center;
+}
+#intro-box-con {
+  padding: 30px;
+  padding-bottom: 70px;
+  display: flex;
+  gap: 90px;
+  justify-content: center;
 }
 
-#intro-box-1 h1{
-    position: relative;
-    left: 5px;
-    top: 5px;
-    
-}
-#intro-box-1 p{
-    position: relative;
-    top: 18px;
-    
-}
-#intro-box-2{
-    
-    background-image: url('/public/img/tab2.svg')
-}
-#intro-box-2 h1{
-    position: relative;
-    
-    
-}
-#intro-box-3{
-    
-    background-image: url('/public/img/tab3.svg')
-}
-#intro-box-3 h1{
-    position: relative;
-}
-#intro-box-3 p{
-    word-break: break-word;
-    height:1rem;
-    
+#intro-box-1 {
+  background-image: url("/public/img/tab1.svg");
 }
 
+#intro-box-1 h1 {
+  position: relative;
+  left: 5px;
+  top: 5px;
+}
+#intro-box-1 p {
+  position: relative;
+  top: 18px;
+}
+#intro-box-2 {
+  background-image: url("/public/img/tab2.svg");
+}
+#intro-box-2 h1 {
+  position: relative;
+}
+#intro-box-3 {
+  background-image: url("/public/img/tab3.svg");
+}
+#intro-box-3 h1 {
+  position: relative;
+}
+#intro-box-3 p {
+  word-break: break-word;
+  height: 1rem;
+}
