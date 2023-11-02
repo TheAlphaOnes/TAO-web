@@ -29,7 +29,7 @@ export default function Home() {
                 >
                   About Us
                 </h1>
-                <p className="leading-relaxed" id="about-title-dic">
+                <p className="leading-relaxed" id="about-title-dic ">
                   TheAlphaOnes: Uniting self-learners and tech enthusiasts, we
                   are a passionate community dedicated to driving innovation,
                   fostering collaboration, and making a meaningful impact
@@ -51,7 +51,7 @@ export default function Home() {
                     <h1 className="title-about-num">
                       Welcome to TheAlphaOnes!
                     </h1>
-                    <p className="about-title-dit">
+                    <p className="about-title-dit text-center mt-4">
                       Hello! We are TheAlphaOnes, a dynamic group of students
                       with a passion for all things tech-related. From software
                       development to AI/ML, UI/UX design, and hardware tech,
@@ -72,7 +72,7 @@ export default function Home() {
                     <h1 className="title-about-num">
                       Building a Community to Change the World
                     </h1>
-                    <p className="about-title-dit">
+                    <p className="about-title-dit text-center mt-4">
                       {" "}
                       We welcome self-learners to join us, as we believe that
                       shared knowledge and expertise can unlock incredible
@@ -95,7 +95,7 @@ export default function Home() {
                     <h1 className="title-about-num">
                       Innovation, self-taught and collaboration
                     </h1>
-                    <p className="about-title-dit">
+                    <p className="about-title-dit text-center mt-4">
                       Our goal is to bring together <br /> like-minded
                       individuals worldwide, pooling our skills and resources to
                       develop impactful, innovative solutions. Harnessing

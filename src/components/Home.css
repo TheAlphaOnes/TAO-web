@@ -1,5 +1,6 @@
 #intro{
     margin-top: 10vh;
+    word-spacing: 4px;
 }
 
 #intro h1 {
@@ -8,8 +9,10 @@
 
 #intro #disc{
     color: #c0c3c5;
-    word-spacing: 4px;
     font-size: 18px;
+}
+#disc{
+    font-family: 'Quicksand', sans-serif;
 }
 
 .tt{
