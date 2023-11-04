@@ -155,6 +155,24 @@ export default function Footer() {
                   Akshat Khare aka BitPixel - Tester &amp; Assister
                 </a>
               </div>
+              <div>
+                <a
+                  href="https://thecognito.vercel.app"
+                  rel="noreferrer"
+                  className="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                >
+                  Cognito aka Harsh - Developer
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://sauravmeghwal.com"
+                  rel="noreferrer"
+                  className="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                >
+                  Saurav - Developer
+                </a>
+              </div>
             </nav>
           </div>
           {/* nav - end */}
