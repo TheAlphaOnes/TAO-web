@@ -21,8 +21,19 @@
   min-width: 260px;
   min-height: 345px;
   max-height: 350px;
-  /* background: pink; */
   border-radius: 7px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mybox,
+  .card-wrapper {
+    max-width: 220px;
+    min-width: 220px;
+    min-height: 300px;
+    max-height: 400px;
+  }
+  #intro-box-con {
+    gap: 30px !important;
+  }
 }
 #about-title {
   background: linear-gradient(
@@ -53,23 +64,17 @@
   color: #ffffff;
   text-align: center;
 }
-/* 
-#about-titple-dic {
+
+.leading-relaxed {
   font-weight: 300;
   font-size: 1rem;
-  line-height: 24px;
-  font-family: 'Quicksand', sans-serif;
-} */
-.leading-relaxed{
-    font-weight: 300;
-    font-size: 1rem;
-    font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
-.about-title-dit{
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 300;
-    font-size: 0.8rem;
+.about-title-dit {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  font-size: 0.8rem;
 }
 
 .title-about-num {
