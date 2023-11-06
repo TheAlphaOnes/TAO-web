@@ -11,9 +11,9 @@ export default function Navbar() {
             id="nav"
             className="flex lg:w-2/5 flex-wrap items-center text-xs md:ml-auto"
           >
-            <Link to="/about" id="⭐" className="mr-8 hover:text-gray-600">
+            <a href="#about" id="⭐" className="mr-8 hover:text-gray-600">
               About Us
-            </Link>
+            </a>
             <Link to="/launches" className="mr-8 hover:text-gray-600">
               Launches
             </Link>
@@ -31,7 +31,7 @@ export default function Navbar() {
             href="/"
             className="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center  lg:items-center lg:justify-center mb-4 md:mb-0"
           >
-            <img src="img/ico.png" className="w-10 h-10" alt="" />
+            <img src="img/ico.png" className="w-10 h-10  " alt="" />
             <span className="ml-3 text-xl text-white">TheAlphaOnes</span>
           </a>
           <div className="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0"></div>

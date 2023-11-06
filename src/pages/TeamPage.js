@@ -1,3 +1,14 @@
+import React from 'react'
+import {NavbarCustom as Navbar} from '../components/Navbar';
+import Footer from '../components/Footer';
+
+
+
 export default function TeamPage() {
-  return <h1>The page is not done yet!</h1>;
+  return (
+    <div>
+      <Navbar/>
+      <Footer/>
+    </div>
+  )
 }
