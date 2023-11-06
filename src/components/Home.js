@@ -10,7 +10,7 @@ export default function Home() {
             id="tw"
             className="mb-2 text-center text-2xl font-bold  md:mb-2 lg:text-3xl"
           >
-            WE ARE THE ALPHAONES
+            We Are TheAlphaOnes
           </h1>
           <p
             id="disc"
