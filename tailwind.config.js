@@ -2,7 +2,7 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     fontFamily: {
-      gilroy: ["Gilroy", "sans-serif"],
+      gilroy: ["Gilroy"],
     },
     fontWeight: {
       light: 300,

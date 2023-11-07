@@ -7,14 +7,14 @@ export default function Activity() {
       <section id="activity-section">
         <section className="text-white body-font">
           <div className="container flex flex-wrap px-5 py-24 pb-0 mx-auto items-center">
-            <div className="md:w-2/3 md:pr-12 md:py-5  md:border-b-0  md:mb-0 pb-10  ">
+            <div className="md:w-2/3 md:pr-12 md:py-5  md:border-b-0 md:mb-0 pb-10">
               <h1
-                className="sm:text-3xl text-2xl font-medium title-font pb-4  pl-8 text-white"
+                className="sm:text-3xl text-2xl title-font pb-4 pl-8 text-white font-gilroy font-bold"
                 id="about-title"
               >
                 Our activities
               </h1>
-              <h2 className="mb-4 text-2xl font-bold md:mb-6 lg:text-5xl">
+              <h2 className="font-gilroy font-bold mb-4 text-2xl md:mb-6 lg:text-5xl">
                 We litteraly do anythings{" "}
               </h2>
               <p className="leading-relaxed" id="about-title-dic">

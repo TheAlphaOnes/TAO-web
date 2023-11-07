@@ -46,10 +46,6 @@
   );
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  font-family: "Roboto", sans-serif;
-
-  font-style: normal;
-  font-weight: 700;
   font-size: 40px;
   line-height: 49px;
 }

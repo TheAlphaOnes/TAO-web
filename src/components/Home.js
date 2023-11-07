@@ -8,9 +8,9 @@ export default function Home() {
         <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
           <h1
             id="tw"
-            className="mb-2 text-center text-2xl font-bold  md:mb-2 lg:text-3xl"
+            className="mb-2 text-center text-2xl font-bold font-gilroy  md:mb-2 lg:text-3xl"
           >
-            We Are TheAlphaOnes
+            WE ARE ALPHAONES
           </h1>
           <p
             id="disc"

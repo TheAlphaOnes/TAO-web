@@ -24,10 +24,10 @@ export default function Home() {
             <div className="container flex flex-wrap px-5 py-24 pb-0 mx-auto items-center">
               <div className="md:w-12/12 md:pr-12 md:py-5  md:border-b-0  md:mb-0 pb-10  ">
                 <h1
-                  className="sm:text-3xl text-2xl font-medium title-font pb-4  text-white"
+                  className="sm:text-3xl font-gilroy font-bold text-2xl title-font pb-4  text-white"
                   id="about-title"
                 >
-                  About Us
+                  About us
                 </h1>
                 <p className="leading-relaxed" id="about-title-dic ">
                   TheAlphaOnes: Uniting self-learners and tech enthusiasts, we
