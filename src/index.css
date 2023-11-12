@@ -1,6 +1,109 @@
-body {
-  background: #0a0d17;
+/* Gilroy Font starts */
+@font-face {
+  font-family: Gilroy;
+  src: url("../public/fonts/Gilroy/Gilroy-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
 }
+
+@font-face {
+  font-family: Gilroy;
+  src: url("../public/fonts/Gilroy/Gilroy-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url("../public/fonts/Gilroy/Gilroy-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url("../public/fonts/Gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url("../public/fonts/Gilroy/Gilroy-ExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 800;
+}
+@font-face {
+  font-family: Gilroy;
+  src: url("../public/fonts/Gilroy/Gilroy-Heavy.ttf") format("truetype"); /* Corrected "ttf" to "truetype" */
+  font-style: normal;
+  font-weight: 900;
+}
+
+
+/* Gilroy font ends */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  margin: 0%;
+  background-color: #0a0e16;
+  background-image: url("/public/img/bg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  color: white;
+
+  scroll-behavior: smooth;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+#home{
+  height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  background-color: #111;
+}
+
+    
+/*  THIS THE SCROLL-BARR */
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+    
+    border-radius: 15px;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: #ff5555a6; 
+    border-radius: 10px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background: #50fa7b; 
+    }
+/* END OF SCHROLL BAR */
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

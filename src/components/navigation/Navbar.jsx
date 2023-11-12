@@ -2,13 +2,12 @@ import Logo from "./Logo";
 import NavElement from "./NavElement";
 
 import { useToggle } from "../../hooks/useToggle";
-import { Link } from "react-router-dom";
-import { IconMenu, IconX } from "@tabler/icons-react";
+import { IconMenu } from "@tabler/icons-react";
 import SideNav from "./SideNav";
 import { useEffect, useState } from "react";
 
 const navigation = [
-  { pathName: "about", title: "About us" },
+  { pathName: "home", title: "Home" },
   { pathName: "launches", title: "Launches" },
   { pathName: "members", title: "Members" },
   { pathName: "contact", title: "Contact us" },
@@ -37,7 +36,7 @@ function Navbar() {
         <div>
           {!isMobile && (
             <div className="body-font flex justify-center items-center">
-              <div className="container mx-auto flex flex-wrap pt-5 pb-5 flex-col md:flex-row items-center">
+              <div className="container mx-auto flex-wrap  flex pt-5 pb-5 flex-col md:flex-row items-center">
                 <NavElement navigation={navigation} />
                 <Logo />
                 <div className="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0"></div>
