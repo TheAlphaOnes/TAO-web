@@ -7,7 +7,7 @@ function NavElement({ navigation }) {
         <Link
           to={nav.pathName}
           key={nav.pathName}
-          className="text-white mr-8 hover:text-gray-600 text-xs"
+          className="font-seogeUI text-white mr-8 hover:text-gray-600 text-xs"
         >
           {nav.title}
         </Link>

@@ -7,7 +7,7 @@ function AppShell() {
   const navigate = useNavigate();
   useEffect(
     function () {
-      if (window.location.pathname === "/") navigate("/about");
+      if (window.location.pathname === "/") navigate("/home");
     },
     [navigate]
   );
