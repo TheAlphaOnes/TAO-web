@@ -9,7 +9,7 @@ function Hero() {
         WE ARE ALPHAONES
         </h1>
         <p
-          className="mx-auto mt-5 font-quicksand max-w-screen-md text-center md:text-lg text-white xs:text-[0.875rem] sm:text-lg"
+          className="mx-auto mt-5 font-quicksand max-w-screen-md text-center text-white xs:text-[0.875rem] sm:text-lg md:text-lg"
         >
           TheAlphaOnes is a community of young developper from all-over the
           world mainly based on discord which got as ambition to revolutionize
