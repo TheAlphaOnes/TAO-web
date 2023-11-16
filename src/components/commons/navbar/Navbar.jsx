@@ -1,7 +1,7 @@
-import Logo from "./Logo";
+import Logo from "../logos/Logo";
 import NavElement from "./NavElement";
 
-import { useToggle } from "../../hooks/useToggle";
+import { useToggle } from "../../../hooks/useToggle";
 import { IconMenu } from "@tabler/icons-react";
 import SideNav from "./SideNav";
 import { useEffect, useState } from "react";

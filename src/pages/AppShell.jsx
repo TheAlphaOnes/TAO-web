@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 
-import Navbar from "../components/navbar/Navbar";
+import Navbar from "../components/commons/navbar/Navbar";
+import Footer from "../components/commons/footer/Footer";
 
 function AppShell() {
   const navigate = useNavigate();
@@ -15,6 +16,7 @@ function AppShell() {
     <>
       <Navbar />
       <Outlet />
+      <Footer/>
     </>
   );
 }
