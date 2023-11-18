@@ -1,0 +1,11 @@
+@media (min-width: 474px) and (max-width: 867px) {
+    #media{
+        max-width: 739px;
+        min-width: 295px;
+    }
+}
+@media (min-width: 868px) and (max-width: 1257px) {
+    #media{
+        max-width: 400px;
+    }
+}
