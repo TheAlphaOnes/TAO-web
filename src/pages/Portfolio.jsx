@@ -7,7 +7,6 @@ function Portfolio() {
         <h1 className="flex justify-center font-quicksand text-[40px] font-extra-900 bg-gradient-to-r from-[#e71d36] to-[#f46036] text-transparent bg-clip-text">
           Portfolio.
         </h1>
-        {/* <div className="flex justify-center flex-col w-full"> */}
           <div className="flex gap-10 mt-10 flex-wrap">
             <CountCard />
             <CountCard />
@@ -20,7 +19,6 @@ function Portfolio() {
             <ProjectCard />
             <ProjectCard />
             <ProjectCard />
-          {/* </div> */}
         </div>
       </div>
     </div>
