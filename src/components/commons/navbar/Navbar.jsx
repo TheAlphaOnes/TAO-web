@@ -11,7 +11,6 @@ const navigation = [
   { pathName: "launches", title: "Launches" },
   { pathName: "members", title: "Members" },
   { pathName: "contact", title: "Contact us" },
-  { pathName: "portfolio", title: "Portfolio" },
 ];
 
 function Navbar() {
