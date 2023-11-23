@@ -18,7 +18,7 @@ function Launches() {
           <Chapters />
         </div>
 
-        <div className="flex justify-between sm:flex-wrap md:flex-nowrap gap-8 mb-16 ">
+        <div className="flex justify-between xs:flex-wrap md:flex-nowrap gap-8 mb-16 ">
           <ListBox />
           <ListBox />
         </div>
