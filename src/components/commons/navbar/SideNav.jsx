@@ -1,10 +1,18 @@
 import { IconX } from "@tabler/icons-react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useParams } from "react-router-dom";
 
 function SideNav({ toggle, navigation }) {
+  const [activeRouteName, setActiveRouteName] = useState("");
+
+  const param = useParams();
+  useEffect(function () {
+    setActiveRouteName(window.location.pathname.slice(1));
+  }, []);
+
   return (
     <div
-      className={`top-0 absolute z-50 flex flex-col w-screen
+      className={`top-0 fixed z-50 flex flex-col w-screen
       } h-screen p-4 bg-[#0A0D17] transition `}
     >
       <div className="flex justify-end">
@@ -14,8 +22,10 @@ function SideNav({ toggle, navigation }) {
         <>
           <Link
             onClick={toggle}
-            className="text-center text-white pt-5 pb-5 text-3xl"
-            key={nav.pathName}
+            className={`${
+              activeRouteName === nav.pathName ? "text-red-600" : ""
+            } text-center pt-5 pb-5 text-3xl font-gilroy hover:text-[#E71D46] `}
+            key={nav}
             to={nav.pathName}
           >
             {nav.title}
