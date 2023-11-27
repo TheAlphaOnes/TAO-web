@@ -3,6 +3,7 @@ import AppShell from "./pages/AppShell";
 import Home from "./pages/Home";
 import Launches from "./pages/Launches";
 import Members from "./pages/Members";
+import Contact from "./components/navigation/contact/Contact";
 // import Portfolio from "./pages/Portfolio";
 function App() {
   return (
@@ -13,8 +14,7 @@ function App() {
             <Route path="home" element={<Home />} />
             <Route path="launches" element={<Launches />} />
             <Route path="members" element={<Members />} />
-            <Route path="contact" element={"Contactus"} />
-            {/* <Route path="portfolio" element={<Portfolio/>} /> */}
+            <Route path="contact" element={<Contact />} />
           </Route>
         </Routes>
       </BrowserRouter>
