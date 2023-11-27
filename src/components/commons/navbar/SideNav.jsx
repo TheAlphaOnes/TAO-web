@@ -19,18 +19,16 @@ function SideNav({ toggle, navigation }) {
         <IconX size={32} color={"white"} onClick={toggle} />
       </div>
       {navigation.map((nav) => (
-        <>
-          <Link
-            onClick={toggle}
-            className={`${
-              activeRouteName === nav.pathName ? "text-red-600" : ""
-            } text-center pt-5 pb-5 text-3xl font-gilroy hover:text-[#E71D46] `}
-            key={nav}
-            to={nav.pathName}
-          >
-            {nav.title}
-          </Link>
-        </>
+        <Link
+          onClick={toggle}
+          className={`${
+            activeRouteName === nav.pathName ? "text-red-600" : ""
+          } text-center pt-5 pb-5 text-3xl font-gilroy hover:text-[#E71D46] `}
+          key={nav.pathname}
+          to={nav.pathName}
+        >
+          {nav.title}
+        </Link>
       ))}
     </div>
   );
