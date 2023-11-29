@@ -9,7 +9,7 @@ function Logo() {
         className="w-7 h-7"
         alt=""
       />
-      <span className="ml-[11px] text-lg text-white">The AlphaOnes</span>
+      <span className="ml-[11px] text-lg text-white">TheAlphaOnes</span>
     </a>
   );
 }

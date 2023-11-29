@@ -1,11 +1,10 @@
 import { IconX } from "@tabler/icons-react";
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function SideNav({ toggle, navigation }) {
   const [activeRouteName, setActiveRouteName] = useState("");
 
-  const param = useParams();
   useEffect(function () {
     setActiveRouteName(window.location.pathname.slice(1));
   }, []);
@@ -18,13 +17,13 @@ function SideNav({ toggle, navigation }) {
       <div className="flex justify-end">
         <IconX size={32} color={"white"} onClick={toggle} />
       </div>
-      {navigation.map((nav) => (
+      {navigation.map((nav, i) => (
         <Link
           onClick={toggle}
           className={`${
             activeRouteName === nav.pathName ? "text-red-600" : ""
           } text-center pt-5 pb-5 text-3xl font-gilroy hover:text-[#E71D46] `}
-          key={nav.pathname}
+          key={i}
           to={nav.pathName}
         >
           {nav.title}

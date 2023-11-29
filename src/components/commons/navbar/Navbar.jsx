@@ -2,8 +2,9 @@ import Logo from "../logos/Logo";
 import NavElement from "./NavElement";
 
 import { useToggle } from "../../../hooks/useToggle";
-import { IconMenu } from "@tabler/icons-react";
+import Burger from "../Burger";
 import SideNav from "./SideNav";
+
 import { useEffect, useState } from "react";
 
 const navigation = [
@@ -44,29 +45,7 @@ function Navbar() {
           )}
           {isMobile && (
             <div className="my-4 mx-4 flex justify-between">
-              <svg
-                onClick={toggle}
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5.33334 10.6665H26.6667"
-                  stroke="white"
-                  strokeWidth="2.66667"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M5 21L21 21"
-                  stroke="white"
-                  strokeWidth="2.66667"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+              <Burger toggle={toggle} size={32} />
               <Logo />
             </div>
           )}

@@ -8,9 +8,7 @@ function MemberCard() {
         <div>
           <img
             className="rounded-full card_xs:w-[92px] card_xs:h-[92px] card_xs:min-w-[92px] card_xs:min-h-[92px] card_sm:w-[160px] card_sm:h-[160px] card_sm:min-w-[160px] card_sm:min-h-[160px]
-            card_md:w-[110px] card_md:h-[110px] card_md:min-w-[110px] card_md:min-h-[110px]
-            card_lg:w-[160px] card_lg:h-[160px] card_lg:min-w-[160px] card_lg:min-h-[160px]
-            "
+            card_md:w-[110px] card_md:h-[110px] card_md:min-w-[110px] card_md:min-h-[110px] card_lg:w-[160px] card_lg:h-[160px] card_lg:min-w-[160px] card_lg:min-h-[160px]"
             src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlBg4YXIsOOMnwbIumlUygK6-GPD5ufnp6gYUkfsODKzUw90HA"
             alt="Sam Altman"
           />

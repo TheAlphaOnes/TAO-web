@@ -3,6 +3,7 @@ import { Outlet, useNavigate } from "react-router-dom";
 
 import Navbar from "../components/commons/navbar/Navbar";
 import Footer from "../components/commons/footer/Footer";
+import { DataContext } from "../contextProvider/DataContext";
 
 function AppShell() {
   const navigate = useNavigate();
@@ -15,8 +16,10 @@ function AppShell() {
   return (
     <>
       <Navbar />
-      <Outlet />
-      <Footer/>
+      <DataContext>
+        <Outlet />
+      </DataContext>
+      <Footer />
     </>
   );
 }
