@@ -1,24 +1,11 @@
 import { useToggle } from "../../../hooks/useToggle";
 
-const chapters = [
-  {
-    disc: "I hold a Master's degree in Business Administration with a focus on strategic management.",
-    "one-liner": "Masters in Business Administration",
-  },
-  {
-    disc: "Passionate about emerging technologies and their impact on businesses.",
-    "one-liner": "Technology Enthusiast",
-  },
-  {
-    disc: "Skilled at finding innovative solutions to complex challenges.",
-    "one-liner": "Problem Solver",
-  },
-];
-
-function Chapters() {
+function Chapters({ projectTitle, chapters }) {
   return (
     <div className="w-full flex flex-col gap-5 xs:px-1 md:px-1">
-      <h1></h1>
+      <h1 className="text-3xl font-bold-800 font-gilroy bg-gradient-to-r from-[#E71D46] from-7% via-[#F85746] via-102% to-[#FF6F46] to-141% bg-clip-text text-transparent">
+        {projectTitle}
+      </h1>
       {chapters.map((chapter, i) => (
         <TheChapter chapter={chapter} key={i} />
       ))}
