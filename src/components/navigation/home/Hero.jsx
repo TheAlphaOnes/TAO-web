@@ -6,7 +6,7 @@ function Hero() {
     <div id={styles.intro} className="py-6 sm:py-8 lg:py-12">
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
         <h1 className="font-bold-800 mb-2 text-white text-center text-2xl md:mb-2 lg:text-3xl leading-10 font-gilroy">
-          WE ARE THEALPHAONES
+          We Are TheAlphaOnes.
         </h1>
         <p className="mx-auto mt-5 font-quicksand max-w-screen-md text-center text-white xs:text-[0.875rem] sm:text-lg md:text-lg">
           TheAlphaOnes is a community of young developper from all-over the
