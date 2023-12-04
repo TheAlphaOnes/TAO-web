@@ -1,56 +1,18 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import ProjectDisplay from "../components/navigation/launches/ProjectDisplay";
 import ListBox from "../components/navigation/launches/ListBox";
 import { useDataContext } from "../contextProvider/DataContext";
 
-const list1 = [];
-const list2 = [];
-
 function Launches() {
   const {
-    state: { status, data },
+    state: {
+      status,
+      data,
+      lists: { list1, list2 },
+    },
   } = useDataContext();
   const [projectIndex, setProjectIndex] = useState(0);
 
-  useEffect(
-    function () {
-      if (status === "finished" && list1.length === 0 && list2.length === 0) {
-        if (data.launches.length % 2 === 0) {
-          const half = data.launches.length / 2;
-          data.launches.forEach((el, i) => {
-            i < half
-              ? list1.push({
-                  id: el.id,
-                  desc: el.name,
-                  one_line_desc: el["one-line-disc"],
-                })
-              : list2.push({
-                  id: el.id,
-                  desc: el.name,
-                  one_line_desc: el["one-line-disc"],
-                });
-          });
-        }
-        if (data.launches.length % 2 !== 0) {
-          const roundedHalf = Math.ceil(data.launches.length / 2);
-          data.launches.forEach((el, i) => {
-            i < roundedHalf
-              ? list1.push({
-                  id: el.id,
-                  desc: el.name,
-                  one_line_desc: el["one-line-disc"],
-                })
-              : list2.push({
-                  id: el.id,
-                  desc: el.name,
-                  one_line_desc: el["one-line-disc"],
-                });
-          });
-        }
-      }
-    },
-    [data, status]
-  );
   return (
     <>
       {status === "loading" && <h1 className="text-5xl text-white">Loading</h1>}

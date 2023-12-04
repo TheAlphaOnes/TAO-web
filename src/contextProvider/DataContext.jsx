@@ -6,14 +6,56 @@ const CurrentContext = createContext();
 const inititalState = {
   data: null,
   status: "idle", // idle, error, loading
+  lists: { list1: [], list2: [] },
 };
 
 function reducer(state, action) {
   switch (action.type) {
     case "dataFetch/loading":
       return { ...state, status: "loading" };
-    case "dataFetch/finished":
-      return { ...state, status: "finished", data: action.payload };
+    case "dataFetch/finished": {
+      const list1 = [];
+      const list2 = [];
+
+      if (action.payload.launches.length % 2 === 0) {
+        const half = action.payload.launches.length / 2;
+        action.payload.launches.forEach((el, i) => {
+          i < half
+            ? list1.push({
+                id: el.id,
+                desc: el.name,
+                one_line_desc: el["one-line-disc"],
+              })
+            : list2.push({
+                id: el.id,
+                desc: el.name,
+                one_line_desc: el["one-line-disc"],
+              });
+        });
+      }
+      if (action.payload.launches.length % 2 !== 0) {
+        const roundedHalf = Math.ceil(action.payload.launches.length / 2);
+        action.payload.launches.forEach((el, i) => {
+          i < roundedHalf
+            ? list1.push({
+                id: el.id,
+                desc: el.name,
+                one_line_desc: el["one-line-disc"],
+              })
+            : list2.push({
+                id: el.id,
+                desc: el.name,
+                one_line_desc: el["one-line-disc"],
+              });
+        });
+      }
+      return {
+        ...state,
+        status: "finished",
+        data: action.payload,
+        lists: { list1, list2 },
+      };
+    }
     case "dataFetch/error":
       return {
         ...state,

@@ -1,4 +1,4 @@
-import { useToggle } from "../../../hooks/useToggle";
+import { useState } from "react";
 
 function Chapters({ projectTitle, chapters }) {
   return (
@@ -14,11 +14,11 @@ function Chapters({ projectTitle, chapters }) {
 }
 
 function TheChapter({ chapter }) {
-  const [value, toggle] = useToggle(false);
-
+  const [toggle, setToggle] = useState(false);
   return (
     <div
-      onClick={toggle}
+      onMouseOver={() => setToggle(true)}
+      onMouseOut={() => setToggle(false)}
       className="
           xs:w-full xs:py-[0.875rem] xs:text-xs
           sm:py-[1.25rem] sm:text-[1.25rem]
@@ -36,7 +36,7 @@ function TheChapter({ chapter }) {
       </p>
       <p
         className={`pl-2 mt-2 text-left font-normal-400 ${
-          !value && "hidden"
+          !toggle && "hidden"
         } xs:text-[0.55rem]
         sm:text-base
         md:text-[0.75rem] lg:text-base text-slate-400`}
