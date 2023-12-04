@@ -1,0 +1,15 @@
+.rotate {
+  animation: rot 4s linear infinite; /* Define the animation */
+}
+
+/* Define the animation */
+@keyframes rot {
+  from {
+    transform: rotate(0deg); /* Starting rotation angle */
+
+  }
+  to {
+    transform: rotate(360deg); /* Ending rotation angle */
+  
+  }
+}
