@@ -1,5 +1,11 @@
 import { Link } from "react-router-dom";
 
+// all images url
+import instagram from "../../../assets/img/insta-foot.svg";
+import github from "../../../assets/img/github-foot.svg";
+import twitter from "../../../assets/img/twt.svg";
+import discord from "../../../assets/img/cord-foot.svg";
+
 function Contact() {
   return (
     <section className="text-white body-font relative">
@@ -23,19 +29,19 @@ function Contact() {
                   to="https://www.instagram.com/TheAlphaOnes/"
                   target="_blank"
                 >
-                  <img alt="" className="m-2" src="/img/insta-foot.svg" />
+                  <img alt="" className="m-2" src={instagram} />
                 </Link>
                 <Link to="https://github.com/TheAlphaOnes/" target="_blank">
-                  <img alt="" className="m-2" src="/img/github-foot.svg" />
+                  <img alt="" className="m-2" src={github} />
                 </Link>
                 <Link to="https://twitter.com/TheAlphaOnesDev" target="_blank">
-                  <img alt="" className="m-2" src="/img/twt.svg" />
+                  <img alt="" className="m-2" src={twitter} />
                 </Link>
                 <Link
                   to="https://discord.com/invite/nbrFDHmsK3"
                   target="_blank"
                 >
-                  <img alt="" className="m-2" src="/img/cord-foot.svg" />
+                  <img alt="" className="m-2" src={discord} />
                 </Link>
               </span>
             </p>
@@ -46,7 +52,7 @@ function Contact() {
               Visit Us
             </h2>
             <p className="leading-relaxed text-base mb-4">
-              <span className="text-white   items-center">
+              <span className="text-white  items-center">
                 <Link
                   to="https://thenorm.netlify.app"
                   target="_blank"
