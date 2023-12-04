@@ -34,7 +34,7 @@ function MemberCard({ details }) {
               target="_blank"
               className={`text-[#E71D46] font-quicksand text-sm font-medium-600 card_xs:text-xs card_sm:text-xl card_md:text-xs card_lg:text-base`}
             >
-              @Contact
+              @{details.contact.type}
             </Link>
           </div>
           <p
