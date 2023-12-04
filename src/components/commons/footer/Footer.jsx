@@ -1,19 +1,34 @@
 import { Link } from "react-router-dom";
 import styles from "./Footer.module.css";
 import Logo from "../logos/Logo";
+
+// social icons images
+import instagram from "../../../assets/img/insta-foot.svg";
+import twitter from "../../../assets/img/twt.svg";
+import github from "../../../assets/img/github-foot.svg";
+import discord from "../../../assets/img/cord-foot.svg";
+
 const socials = [
   {
     link: "https://www.instagram.com/TheAlphaOnes/",
-    image: "img/insta-foot.svg",
+    image: instagram,
   },
-  { link: "https://twitter.com/TheAlphaOnesDev", image: "img/twt.svg" },
-  { link: "https://github.com/TheAlphaOnes/", image: "img/github-foot.svg" },
-  { link: "https://discord.gg/nbrFDHmsK3", image: "img/cord-foot.svg" },
+  {
+    link: "https://twitter.com/TheAlphaOnesDev",
+    image: twitter,
+  },
+  {
+    link: "https://github.com/TheAlphaOnes/",
+    image: github,
+  },
+  {
+    link: "https://discord.gg/nbrFDHmsK3",
+    image: discord,
+  },
 ];
 const pages = [
   { link: "/contact", name: "Contacts Us" },
   { link: "/launches", name: "Launches" },
-  { link: "/project", name: "Projects" },
   { link: "/team", name: "Team" },
   { link: "/blog", name: "Blog" },
 ];
@@ -26,14 +41,11 @@ const credits = [
     link: "/",
     name: "Doumbia Al-Hassan aka Caprisunpapy - UI/UX Designer",
   },
-
   { link: "/", name: "Akshat Khare aka BitPixel - Tester &amp; Assister" },
-
   {
     link: "https://thecognito.vercel.app",
     name: "Cognito aka Harsh - Developer",
   },
-
   { link: "https://sauravmeghwal.com", name: "Saurav - Developer" },
 ];
 

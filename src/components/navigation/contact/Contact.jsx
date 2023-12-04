@@ -82,13 +82,14 @@ function Contact() {
             </h2>
             <p className="leading-relaxed text-base mb-4">
               <span className="text-white  items-center">
-                <Link
-                  to="mailto:thealphaones.dev@gmail.com"
+                <a
+                  href="mailto:thealphaones.dev@gmail.com"
                   target="_blank"
                   className="hover:text-red-500"
+                  rel="noreferrer"
                 >
                   - thealphaones.dev@gmail.com
-                </Link>
+                </a>
                 <br />
                 <Link
                   to="mailto:thenormvg@gmail.com"

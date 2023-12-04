@@ -8,7 +8,6 @@ function Hero() {
 
   return (
     <div id={styles.intro} className="py-6 sm:py-8 lg:py-12" ref={heroHeight}>
-      {console.log(heroHeight)}
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
         <h1 className="font-bold-800 mb-2 text-white text-center text-2xl md:mb-2 lg:text-3xl leading-10 font-gilroy">
           We Are TheAlphaOnes.

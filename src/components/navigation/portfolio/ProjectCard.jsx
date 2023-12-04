@@ -14,11 +14,10 @@ function ProjectCard() {
             </div>
             <div>
               <img
-                src="../../../public/img/theAlphaOnes.png"
+                src="/assets/img/thealphaones.png"
                 alt="TheAlphaOnes"
                 className="w-11"
               />
-              
             </div>
           </div>
 

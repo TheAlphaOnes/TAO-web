@@ -6,10 +6,8 @@
 @keyframes rot {
   from {
     transform: rotate(0deg); /* Starting rotation angle */
-
   }
   to {
     transform: rotate(360deg); /* Ending rotation angle */
-  
   }
 }
