@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Launches from "./pages/Launches";
 import Members from "./pages/Members";
 import Contact from "./components/navigation/contact/Contact";
-// import Portfolio from "./pages/Portfolio";
+
 function App() {
   return (
     <>
