@@ -9,14 +9,14 @@ const pillars = [
     img: norm,
     disc: "👨‍💻 18-year Fullstack Dev | Founder @TheAlphaOnesDev | Building 'Fury' AI | 🎵 Hip-Hop Lover | ☕ Coffee ❤️ | Tech for a better world 🌍| Hardware Projects too",
     name: "Vishnu",
-    tags: ["Designer", "Pillar", "Creative"],
+    tags: ["Developer", "Robotics", "AI"],
   },
   {
     contact: { type: "Twitter", url: "https://x.com/mrpixelak" },
     img: pixel,
     disc: "18-year-Student 📚|| Software developer🧑‍💻 || A self taught developer🔥 || Co-Founder && COO of @TheAlphaOnesDev",
     name: "Akshat",
-    tags: ["Designer", "Pillar", "Creative"],
+    tags: ["Game Dev", "Designer", "Robotics"],
   },
 ];
 
