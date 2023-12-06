@@ -6,14 +6,14 @@ import pixel from "../assets/img/pixel.jpg";
 const pillars = [
   {
     contact: { type: "Twitter", url: "https://x.com/thenormvg" },
-    img: norm,
+    pfp: norm,
     disc: "👨‍💻 18-year Fullstack Dev | Founder @TheAlphaOnesDev | Building 'Fury' AI | 🎵 Hip-Hop Lover | ☕ Coffee ❤️ | Tech for a better world 🌍| Hardware Projects too",
     name: "Norm",
     tags: ["Designer", "Pillar", "Creative"],
   },
   {
     contact: { type: "Twitter", url: "https://x.com/mrpixelak" },
-    img: pixel,
+    pfp: pixel,
     disc: "17year-Student 📚|| Software developer🧑‍💻 || A self taught developer🔥 || Co-Founder && COO of @TheAlphaOnesDev",
     name: "Mr Pixel",
     tags: ["Designer", "Pillar", "Creative"],

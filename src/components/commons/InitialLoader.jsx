@@ -8,7 +8,7 @@ function InitialLoader() {
         <img
           src={buringFlame}
           alt="burningFlame"
-          className="w-full h-full grayscale"
+          className="w-full h-full"
         />
       </div>
       <h1
