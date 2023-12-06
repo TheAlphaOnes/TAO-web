@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { useEffect, useState } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 import { DataContext } from "../contextProvider/DataContext";
@@ -21,6 +22,7 @@ function AppShell() {
     },
     [navigate]
   );
+
   return (
     <>
       {isLoading && <InitialLoader />}
@@ -29,6 +31,7 @@ function AppShell() {
         <Outlet />
       </DataContext>
       <Footer />
+      <Analytics />
     </>
   );
 }
