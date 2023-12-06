@@ -1,4 +1,4 @@
-import Logo from "../logos/Logo";
+import Logo from "../Logo";
 import NavElement from "./NavElement";
 
 import { useToggle } from "../../../hooks/useToggle";
@@ -35,7 +35,7 @@ function Navbar() {
         {value && <SideNav toggle={toggle} navigation={navigation} />}
         <div>
           {!isMobile && (
-            <div className="body-font flex justify-center items-center">
+            <div className="body-font flex justify-center items-center bg-[#0a0e16]">
               <div className="container mx-auto flex-wrap  flex pt-5 pb-5 flex-col md:flex-row items-center">
                 <NavElement navigation={navigation} />
                 <Logo />

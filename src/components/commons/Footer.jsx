@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import styles from "./Footer.module.css";
-import Logo from "../logos/Logo";
+import Logo from "./Logo";
 
 // social icons images
-import instagram from "../../../assets/img/insta-foot.svg";
-import twitter from "../../../assets/img/twt.svg";
-import github from "../../../assets/img/github-foot.svg";
-import discord from "../../../assets/img/cord-foot.svg";
+import instagram from "../../assets/img/insta-foot.svg";
+import twitter from "../../assets/img/twt.svg";
+import github from "../../assets/img/github-foot.svg";
+import discord from "../../assets/img/cord-foot.svg";
 
 const socials = [
   {

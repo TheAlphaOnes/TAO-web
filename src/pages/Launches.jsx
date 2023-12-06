@@ -1,17 +1,19 @@
-import { useState } from "react";
+import { useEffect } from "react";
 import ProjectDisplay from "../components/navigation/launches/ProjectDisplay";
 import ListBox from "../components/navigation/launches/ListBox";
 import { useDataContext } from "../contextProvider/DataContext";
 
 function Launches() {
   const {
+    dispatch,
     state: {
       status,
       data,
       lists: { list1, list2 },
+      projectIndex,
+      setProjectIndex,
     },
   } = useDataContext();
-  const [projectIndex, setProjectIndex] = useState(0);
 
   return (
     <>
@@ -33,8 +35,8 @@ function Launches() {
             </h1>
 
             <div className="flex justify-between xs:flex-wrap md:flex-nowrap gap-8 mb-16 ">
-              <ListBox list={list1} handleClick={setProjectIndex} />
-              <ListBox list={list2} handleClick={setProjectIndex} />
+              <ListBox list={list1} dispatch={dispatch} />
+              <ListBox list={list2} dispatch={dispatch} />
             </div>
           </div>
         </div>

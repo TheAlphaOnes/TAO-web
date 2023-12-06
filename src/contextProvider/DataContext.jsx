@@ -5,8 +5,9 @@ const CurrentContext = createContext();
 
 const inititalState = {
   data: null,
-  status: "idle", // idle, error, loading
+  status: "idle", // "idle" | "error" | "loading"
   lists: { list1: [], list2: [] },
+  projectIndex: null,
 };
 
 function reducer(state, action) {
@@ -16,6 +17,8 @@ function reducer(state, action) {
     case "dataFetch/finished": {
       const list1 = [];
       const list2 = [];
+
+      state.projectIndex = action.payload.launches[0].id;
 
       if (action.payload.launches.length % 2 === 0) {
         const half = action.payload.launches.length / 2;
@@ -61,6 +64,11 @@ function reducer(state, action) {
         ...state,
         status: "error",
       };
+    case "dataFetch/changeProjectIndex":
+      return {
+        ...state,
+        projectIndex: action.payload,
+      };
   }
 }
 
@@ -82,7 +90,7 @@ export function DataContext({ children }) {
   }, []);
 
   return (
-    <CurrentContext.Provider value={{ state }}>
+    <CurrentContext.Provider value={{ state, dispatch }}>
       {children}
     </CurrentContext.Provider>
   );

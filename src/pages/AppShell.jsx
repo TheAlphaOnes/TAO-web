@@ -4,7 +4,7 @@ import { Outlet, useNavigate } from "react-router-dom";
 import { DataContext } from "../contextProvider/DataContext";
 
 import Navbar from "../components/commons/navbar/Navbar";
-import Footer from "../components/commons/footer/Footer";
+import Footer from "../components/commons/Footer";
 import InitialLoader from "../components/commons/InitialLoader";
 
 function AppShell() {

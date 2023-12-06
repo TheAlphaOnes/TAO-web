@@ -1,4 +1,4 @@
-import theAlphaOnes from "../../../assets/img/thealphaones.png";
+import theAlphaOnes from "../../assets/img/thealphaones.png";
 function Logo() {
   return (
     <a

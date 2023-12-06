@@ -1,11 +1,16 @@
-function ListBox({ list, handleClick }) {
+function ListBox({ list, dispatch }) {
   return (
     <div className="w-full border-l-2 pl-5 py-2 flex flex-col gap-4 ">
       {list.map((titles, index) => (
         <div
           key={index}
           className="cursor-pointer hover:bg-[#1a1e29] rounded-lg"
-          onClick={() => handleClick(titles.id)}
+          onClick={() =>
+            dispatch({
+              type: "dataFetch/changeProjectIndex",
+              payload: titles.id,
+            })
+          }
         >
           <div className="flex items-center">
             <div className="w-3 h-[1px] bg-white mr-1"></div>
