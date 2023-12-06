@@ -7,16 +7,16 @@ const pillars = [
   {
     contact: { type: "Twitter", url: "https://x.com/thenormvg" },
     pfp: norm,
-    disc: "👨‍💻 18-year Fullstack Dev | Founder @TheAlphaOnesDev | Building 'Fury' AI | 🎵 Hip-Hop Lover | ☕ Coffee ❤️ | Tech for a better world 🌍| Hardware Projects too",
-    name: "Norm",
-    tags: ["Designer", "Pillar", "Creative"],
+    disc: "👨‍💻 18-year Fullstack Dev | Founder TheAlphaOnes | Building 'Fury' AI | 🎵 Hip-Hop | ☕ Coffee | Tech for a better world 🌍| Hardware Projects too",
+    name: "Vishnu",
+    tags: ["Developer", "Robotics", "AI"],
   },
   {
     contact: { type: "Twitter", url: "https://x.com/mrpixelak" },
     pfp: pixel,
-    disc: "17year-Student 📚|| Software developer🧑‍💻 || A self taught developer🔥 || Co-Founder && COO of @TheAlphaOnesDev",
-    name: "Mr Pixel",
-    tags: ["Designer", "Pillar", "Creative"],
+    disc: "18-year-Student 📚|| Software developer🧑‍💻 || A self taught developer🔥 || Co-Founder && COO of TheAlphaOnes || Game Dev",
+    name: "Akshat",
+    tags: ["Game Dev", "Designer", "Robotics"],
   },
 ];
 

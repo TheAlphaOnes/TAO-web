@@ -75,13 +75,7 @@ function Contact() {
                   - Akshat aka Mr.Pixel
                 </Link>
                 <br />
-                <Link to="" className="hover:text-red-600">
-                  <span className="text-red hover:text-white  font-bold-800 font-quicksand">
-                    Official-Member
-                  </span>{" "}
-                  - Doumbia aka Caprisunpapy
-                </Link>
-                <br />
+                
               </span>
             </p>
           </div>

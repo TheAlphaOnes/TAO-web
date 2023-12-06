@@ -38,10 +38,10 @@ const credits = [
     name: "Vishnu Gupta aka Norm - Developer",
   },
   {
-    link: "/",
+    link: "https://www.instagram.com/caprisunpapy/",
     name: "Doumbia Al-Hassan aka Caprisunpapy - UI/UX Designer",
   },
-  { link: "/", name: "Akshat Khare aka BitPixel - Tester &amp; Assister" },
+  { link: "https://mrpixel.netlify.app/", name: "Akshat Khare aka Mr.Pixel - Tester & Assister" },
   {
     link: "https://thecognito.vercel.app",
     name: "Cognito aka Harsh - Developer",
