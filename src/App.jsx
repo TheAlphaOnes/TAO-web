@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Launches from "./pages/Launches";
 import Members from "./pages/Members";
 import Contact from "./components/navigation/contact/Contact";
+import Error from "./components/commons/Error";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<AppShell />}>
+            <Route path="*" element={<Error />} />
             <Route path="home" element={<Home />} />
             <Route path="launches" element={<Launches />} />
             <Route path="members" element={<Members />} />
