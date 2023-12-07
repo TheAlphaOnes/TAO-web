@@ -5,11 +5,31 @@ import { Link } from "react-router-dom";
 
 function Hero() {
   const heroHeight = useRef(null);
+  // const [headLine, setHeadLine] = useState("");
+
+  // useEffect(function () {
+  //   var i = 0;
+  //   var txt = "We Are TheAlphaOnes."; /* The text */
+  //   var speed = 200; /* The speed/duration of the effect in milliseconds */
+
+  //   function typeWriter() {
+  //     if (i < txt.length) {
+  //       setHeadLine((prevHead) => prevHead + txt.charAt(i));
+  //       i++;
+  //       setTimeout(typeWriter, speed);
+  //     }
+  //   }
+
+  //   typeWriter(); // Start typing
+  // }, []);
 
   return (
     <div id={styles.intro} className="py-6 sm:py-8 lg:py-12" ref={heroHeight}>
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-        <h1 className="font-bold-800 mb-2 text-white text-center text-2xl md:mb-2 lg:text-3xl leading-10 font-gilroy">
+        <h1
+          id="tw"
+          className="font-bold-800 mb-2 text-white text-center text-2xl md:mb-2 lg:text-3xl leading-10 font-gilroy"
+        >
           We Are TheAlphaOnes.
         </h1>
         <p className="mx-auto mt-5 font-quicksand max-w-screen-md text-center text-white xs:text-[0.875rem] sm:text-lg md:text-lg">

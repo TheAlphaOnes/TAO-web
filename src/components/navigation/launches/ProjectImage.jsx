@@ -2,10 +2,7 @@ function ProjectImage({ img }) {
   return (
     <div className="w-full xs:px-1 md:px-1">
       <img
-        className="rounded-[10px] xs:w-full xs:h-[250px]
-        sm:h-[340px]
-        md:min-w-[350px]
-        md:w-full md:h-[250px] lg:w-full lg:h-[350px]"
+         className="rounded-[10px] aspect-w-2 aspect-h-1"
         src={img}
       />
     </div>

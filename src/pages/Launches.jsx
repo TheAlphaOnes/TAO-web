@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import ProjectDisplay from "../components/navigation/launches/ProjectDisplay";
 import ListBox from "../components/navigation/launches/ListBox";
 import { useDataContext } from "../contextProvider/DataContext";
