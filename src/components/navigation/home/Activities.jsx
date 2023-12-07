@@ -28,7 +28,7 @@ function Activities() {
             <div className="py-6 con-di sm:py-8 lg:py-12">
               <div
                 className="flex justify-center ml-[5%] mx-auto max-w-screen-2xl px-4 md:px-8">
-                <div className="mb-4 wwd-con  grid grid-cols-1 gap-4 sm:grid-cols-1 md:mb-8 md:grid-cols-4 md:gap-6 xl:gap-8">
+                <div className="mb-4 wwd-con flex flex-wrap justify-center gap-5">
                   <div
                     id={styles["wwd-box-1"]}
                     className={`${styles['wwd-box']} group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80`}
