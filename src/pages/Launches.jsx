@@ -35,7 +35,9 @@ function Launches() {
 
             <div className="flex justify-between xs:flex-wrap md:flex-nowrap gap-8 mb-16 ">
               <ListBox list={list1} dispatch={dispatch} />
-              <ListBox list={list2} dispatch={dispatch} />
+              {list2.length !== 0 && (
+                <ListBox list={list2} dispatch={dispatch} />
+              )}
             </div>
           </div>
         </div>

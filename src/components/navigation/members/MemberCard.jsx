@@ -40,7 +40,9 @@ function MemberCard({ details }) {
           <p
             className={`max-w-[270px] card_xs:max-w-[360px] card_xs:w-full card_sm:max-w-[720px] font-quicksand font-normal-400 mt-3 card_xs:mt-1 card_xs:text-xs card_sm:text-xl card_md:text-xs card_lg:text-base`}
           >
-            {details.disc}
+            {details.disc.length > 150
+              ? `${details.disc.slice(0, 150)}...`
+              : details.disc}
           </p>
           <div className="flex gap-5 card_xs:gap-3 text-sm font-quicksand font-medium-600 text-[#DE001B] card_xs:text-xs card_sm:text-xl card_md:text-xs card_lg:text-base">
             {details.tags.map((el) => (

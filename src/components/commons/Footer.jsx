@@ -29,7 +29,7 @@ const socials = [
 const pages = [
   { link: "/contact", name: "Contacts Us" },
   { link: "/launches", name: "Launches" },
-  { link: "/team", name: "Team" },
+  { link: "/members", name: "Team" },
   { link: "/blog", name: "Blog" },
 ];
 const credits = [
@@ -41,7 +41,10 @@ const credits = [
     link: "https://www.instagram.com/caprisunpapy/",
     name: "Doumbia Al-Hassan aka Caprisunpapy - UI/UX Designer",
   },
-  { link: "https://mrpixel.netlify.app/", name: "Akshat Khare aka Mr.Pixel - Tester & Assister" },
+  {
+    link: "https://mrpixel.netlify.app/",
+    name: "Akshat Khare aka Mr.Pixel - Tester & Assister",
+  },
   {
     link: "https://thecognito.vercel.app",
     name: "Cognito aka Harsh - Developer",
