@@ -8,7 +8,7 @@ import SideNav from "./SideNav";
 import { useEffect, useState } from "react";
 
 const navigation = [
-  { pathName: "home", title: "Home" },
+  { pathName: "", title: "Home" },
   { pathName: "launches", title: "Launches" },
   { pathName: "members", title: "Members" },
   { pathName: "contact", title: "Contact us" },
