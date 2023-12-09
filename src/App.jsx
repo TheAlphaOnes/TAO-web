@@ -1,6 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useEffect } from "react";
-import { getAllBlogs } from "./services/blogs/fetchBlog";
 
 import AppShell from "./pages/AppShell";
 import Home from "./pages/Home";
@@ -10,12 +8,6 @@ import Contact from "./components/navigation/contact/Contact";
 import Error from "./components/commons/Error";
 
 function App() {
-  useEffect(function () {
-    async function fetchBlogs() {
-      await getAllBlogs();
-    }
-    fetchBlogs();
-  }, []);
   return (
     <>
       <BrowserRouter>
