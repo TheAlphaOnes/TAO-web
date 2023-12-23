@@ -7,27 +7,19 @@ import SideNav from "./SideNav";
 
 import { useEffect, useState } from "react";
 
+import useIsMobile from "../../../hooks/useIsMobile";
+
 const navigation = [
   { pathName: "", title: "Home" },
   { pathName: "launches", title: "Launches" },
   { pathName: "members", title: "Members" },
   { pathName: "contact", title: "Contact us" },
+  { pathName: "blog", title: "Blog"},
 ];
 
 function Navbar() {
   const [value, toggle] = useToggle(false);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(
-    function () {
-      function handleResize() {
-        setIsMobile(window.innerWidth <= 800);
-      }
-      handleResize();
-      window.addEventListener("resize", handleResize);
-    },
-    [setIsMobile]
-  );
+  const isMobile = useIsMobile();
 
   return (
     <>
