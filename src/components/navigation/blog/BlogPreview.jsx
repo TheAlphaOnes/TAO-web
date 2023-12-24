@@ -6,33 +6,33 @@ import { Link } from "react-router-dom";
 import styles from "./Blog.module.css";
 import { supabase } from "../../../services/supbase";
 
-export default function BlogPreview() {
+export default function BlogPreview({
+  // props coming from blog.jsx//send date as a pair like this "date={day:19,month:DEC}"
+  date,
+  authorName="@unknown",//not passed
+  title,
+  tags,
+  likes,
+  reads,
+  content,
+  imageUrl,
+}) {
   const isMobile = useIsMobile();
 
-  const [blogs, setBlogs] = useState(null);
-  const [error, setError] = useState(null);
-
-  let text =
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, praesentium.";
-  //text from blog from backend
-  let textPreview = "";
-  if (text.length > 720) textPreview = text.slice(0, 720);
-  else textPreview = text;
-
   return (
-    <div >
+    <div>
       <div>
         <div className="flex md:pl-20 md:pr-7">
           <div className=" w-fit pr-5 ">
             <div className="text-3xl font-medium-600 w-fit">
-              19
+              {date.day}
               <br />
-              DEC
+              {date.month}
             </div>
             {!isMobile && (
               <div className="flex justify-end">
                 <div className=" relative w-4 -rotate-90 text-xs  top-32 ">
-                  @theauthorofthis
+                  {authorName}
                 </div>
               </div>
             )}
@@ -45,7 +45,7 @@ export default function BlogPreview() {
                     className=" w-full h-fit md:h-fit  font-medium-600  text-2xl lg:text-3xl pb-3"
                     id={styles["blog-heading"]}
                   >
-                    Let me tell you something Let me tell you somthing
+                    {title}
                   </h1>
                   <div className="flex gap-2 px-2 items-start pt-2">
                     <button>
@@ -64,27 +64,27 @@ export default function BlogPreview() {
                   </div>
                 </div>
                 <div className="pb-5 h-52   hidden md:block">
-                  <span className="overflow-hidden h-full ">{textPreview}</span>
+                  <span className="overflow-hidden h-full ">{content}</span>
                   <Link className="px-2 bg-red-600 bg-clip-text text-transparent">
                     ...Read More
                   </Link>
                 </div>
                 <div className="relative  bottom-0 flex items-center gap-3">
-                  <div
-                    className="flex border overflow-hidden rounded-3xl w-fit p-0.5"
-                    id={styles["tag-background"]}
-                  >
+                  {tags.map((tag,index) => (
                     <div
-                      className=" px-2 bg-[#0a0e16]"
-                      id={styles["tag"]}
+                      key={index}
+                      className="flex overflow-hidden rounded-3xl w-fit p-0.5"
+                      id={styles["tag-background"]}
                     >
-                      #TimeFlies
+                      <div className=" px-2 bg-[#0a0e16]" id={styles["tag"]}>
+                        {"#"+tag}
+                      </div>
                     </div>
-                  </div>
+                  ))}
                   <div>
                     {isMobile && (
                       <div className="">
-                        <div className=" relative w-4 ">@theauthorofthis</div>
+                        <div className=" relative w-4 ">{authorName}</div>
                       </div>
                     )}
                   </div>
@@ -94,7 +94,7 @@ export default function BlogPreview() {
           </div>
           <div className=" flex items-center p-4">
             <div>
-              <img src="" alt="image" className="bg-blue-500 w-24 h-24" />
+              <img src={imageUrl} alt="image" className="bg-blue-500 w-24 h-24" />
             </div>
           </div>
         </div>
