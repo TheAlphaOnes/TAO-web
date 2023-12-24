@@ -2,7 +2,7 @@ import React from "react";
 import useIsMobile from "../hooks/useIsMobile";
 import TopicFilter from "../components/navigation/blog/TopicFilter";
 import StaffPicks from "../components/navigation/blog/StaffPicks";
-import OtherWriters from "../components/navigation/blog/otherWriters";
+import OtherWriters from "../components/navigation/blog/OtherWriters";
 import CallBlogPreview from "../components/navigation/blog/CallBlogPreview";
 
 export default function Blog() {
