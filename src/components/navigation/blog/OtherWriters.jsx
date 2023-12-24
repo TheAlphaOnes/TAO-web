@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function otherWriters({imageUrl , authorName}) {//takes props from blog.jsx
+export default function OtherWriters({imageUrl , authorName}) {//takes props from blog.jsx
   return (
     <div>
       <div className=' p-2'>
