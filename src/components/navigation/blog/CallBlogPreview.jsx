@@ -44,12 +44,10 @@ export default function CallBlogPreview({ blog }) {
   // blog image url //
   const imageUrl = blog.blog_thumbnail
 
-  const logDate = ()=>{
-    console.log(date);
-  }
+ 
   return (
     <>
-      <div className="py-10" onClick={logDate}>
+      <div className="py-10">
         <BlogPreview
           date={date}
           title={title}

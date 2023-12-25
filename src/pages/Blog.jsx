@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import useIsMobile from "../hooks/useIsMobile";
 import TopicFilter from "../components/navigation/blog/TopicFilter";
 import StaffPicks from "../components/navigation/blog/StaffPicks";
@@ -18,11 +18,11 @@ export default function Blog() {
       last_updated: "2023-12-19T08:30:00",
       blog_info: {
         blog_full_title: "let me tell you something let me tell you something",
-        blog_category_array: ["sci/fi" , "begginer", "noob"],
+        blog_category_array: ["Programming"],
       },
       blog_engagement: { likes: 282, reads: 3388 },
       blog_markup:
-        "<ul><li><p><strong><em>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem repudiandae similique earum quasi dolore nisi? Perspiciatis hic expedita et! Magnam ducimus sapiente mollitia eaque, excepturi quidem necessitatibus doloribus enim nihil laudantium esse, expedita itaque!</em></strong></p></li></ul>",
+        "<ul><li><p><strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem repudiandae similique earum quasi dolore nisi? Perspiciatis hic expedita et! Magnam ducimus sapiente mollitia eaque, excepturi quidem necessitatibus doloribus enim nihil laudantium esse, ggggggggggggggggggggggggggggggg fvf fvf fvfvf fvfvf  fvfv fvfvf fvfvf fvfvf fvfvf fvfvf fvfvf fvfvf fvfvf fvfvfvfvf fvfvfvfvf  orem ipsum, dolor sit amet consectetur adipisicing elit. Autem repudiandae similique earum quasi dolore nisi? Perspiciatis hic expedita et! Magnam ducimus sapiente mollitia eaque, excepturi quidem necessitatibus doloribus enim nihil laudantium esse, ggggggggggggggggggggggggggggggg fvf fvf fvfvf fvfvf  fvfv fvfvf fvfvf fvfvf fvfvf fvfvf fvfvf fvfvf fvfvf fvfvfvfvf fvfvfvfvf expedita itaque</strong></p></li></ul>",
     },
     {
       id: 2,
@@ -30,7 +30,7 @@ export default function Blog() {
       last_updated: "2023-01-10T08:30:00",
       blog_info: {
         blog_full_title: "let me tell you something let me tell you something",
-        blog_category_array: ["sci/fi"],
+        blog_category_array: ["Beginner","Latest"],
       },
       blog_engagement: { likes: 282, reads: 3388 },
       blog_markup:
@@ -41,24 +41,41 @@ export default function Blog() {
       last_updated: "2023-11-26T08:30:00",
       blog_info: {
         blog_full_title: "let me tell you something let me tell you something",
-        blog_category_array: ["sci/fi"],
+        blog_category_array: ["sci/fi","Latest"],
       },
       blog_engagement: { likes: 282, reads: 3388 },
       blog_markup:
         "<ul><li><p><strong><em>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem repudiandae similique earum quasi dolore nisi? Perspiciatis hic expedita et! Magnam ducimus sapiente mollitia eaque, excepturi quidem necessitatibus doloribus enim nihil laudantium esse, expedita itaque!</em></strong></p></li></ul>",
     },
   ];
+
   const isMobile = useIsMobile();
+
+  const [filter,setFilter] = useState("Latest");
+  const [blogs,setBlogs] = useState([]);
+
+  useEffect(()=>{
+    const temp = [];
+    testBlogs.map((blog)=>{
+      if(blog.blog_info.blog_category_array.includes(filter)){
+        temp.push(blog);
+      }
+    });
+    setBlogs(temp);
+  },[filter])
+
+
   return (
     // below this is mobile view
+    
     <div className="bg-[#0a0e16]">
       {isMobile ? (
         <div>
           <div className="flex pb-20 w-full ">
-            <div className="w-full h-full px-2 ">
-              <TopicFilter />
-              {testBlogs.map((blog) => (
-                <div key={blog.id}>
+            <div className="w-full h-full px-2 " >
+              <TopicFilter setFilter={setFilter} filter={filter}/>
+              {blogs.map((blog) => (
+                <div key={blog.id} className="min-w-full" >
                   <CallBlogPreview blog={blog} />
                 </div>
               ))}
@@ -95,8 +112,8 @@ export default function Blog() {
         // below this is Non-mobile view
         <div className="flex min-h-screen w-full ">
           <div className="w-9/12 h-full">
-            <TopicFilter />
-              {testBlogs.map((blog) => (
+            <TopicFilter setFilter={setFilter} filter={filter}/>
+              {blogs.map((blog) => (
                 <div key={blog.id}>
                   <CallBlogPreview blog={blog} />
                 </div>
