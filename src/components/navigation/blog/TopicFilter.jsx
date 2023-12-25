@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import useBlog from "../../../contextProvider/BlogContext";
 
 export default function TopicFilter({filter,setFilter}) {
   
