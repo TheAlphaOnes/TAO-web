@@ -21,8 +21,10 @@ export default function Blog() {
         blog_category_array: ["Programming"],
       },
       blog_engagement: { likes: 282, reads: 3388 },
+      blog_thumbnail: "https://e0.pxfuel.com/wallpapers/398/472/desktop-wallpaper-doge.jpg",
+
       blog_markup:
-        "<ul><li><p><strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem repudiandae similique earum quasi dolore nisi? Perspiciatis hic expedita et! Magnam ducimus sapiente mollitia eaque, excepturi quidem necessitatibus doloribus enim nihil laudantium esse, ggggggggggggggggggggggggggggggg fvf fvf fvfvf fvfvf  fvfv fvfvf fvfvf fvfvf fvfvf fvfvf fvfvf fvfvf fvfvf fvfvfvfvf fvfvfvfvf  orem ipsum, dolor sit amet consectetur adipisicing elit. Autem repudiandae similique earum quasi dolore nisi? Perspiciatis hic expedita et! Magnam ducimus sapiente mollitia eaque, excepturi quidem necessitatibus doloribus enim nihil laudantium esse, ggggggggggggggggggggggggggggggg fvf fvf fvfvf fvfvf  fvfv fvfvf fvfvf fvfvf fvfvf fvfvf fvfvf fvfvf fvfvf fvfvfvfvf fvfvfvfvf expedita itaque</strong></p></li></ul>",
+        "<ul><li><p><strong>Lorem ipsum, que</strong></p></li></ul>",
     },
     {
       id: 2,
@@ -33,8 +35,9 @@ export default function Blog() {
         blog_category_array: ["Beginner","Latest"],
       },
       blog_engagement: { likes: 282, reads: 3388 },
+      blog_thumbnail: "https://e0.pxfuel.com/wallpapers/398/472/desktop-wallpaper-doge.jpg",
       blog_markup:
-        "<ul><li><p><strong><em>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem repudiandae similique earum quasi dolore nisi? Perspiciatis hic expedita et! Magnam ducimus sapiente mollitia eaque, excepturi quidem necessitatibus doloribus enim nihil laudantium esse, expedita itaque!</em></strong></p></li></ul>",
+        "<ul><li><p><strong><em>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem repudiandae similique earum quasi dolore nisi? Perspiciatis hic expedita et! Magnam ducimus sapiente mollitia eaque, excepturi quidem necessitatibus doloribus enim nihil <br/>laudantium esse, expedita itaque!</em></strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem repudiandae similique earum quasi dolore nisi? Perspiciatis hic expedita et! Magnam ducimus sapiente mollitia eaque, excepturi quidem necessitatibus doloribus enim nihil laudantium esse, expedita itaqueLorem ipsum, dolor sit amet consectetur adipisicing elit. Autem repudiandae <br/> similique earum quasi dolore nisi? Perspiciatis hic expedita et! Magnam ducimus sapiente mollitia eaque, excepturi quidem necessitatibus doloribus enim nihil laudantium esse, expedita itaqueLorem ipsum, dolor sit amet consectetur adipisicing elit. Autem repudiandae similique earum quasi dolore nisi? Perspiciatis hic <br/> expedita et! Magnam ducimus sapiente mollitia eaque, excepturi quidem necessitatibus doloribus enim nihil laudantium esse, expedita itaqueLorem ipsum, dolor sit amet consectetur adipisicing elit. Autem repudiandae similique earum quasi dolore nisi? Perspiciatis hic expedita et! Magnam ducimus sapiente mollitia eaque, excepturi quidem necessitatibus doloribus enim nihil laudantium esse, expedita itaque</p></li></ul>",
     },{
       id: 3,
       created_at: "2023-12-08T18:54:21.334473+00:00",
@@ -44,6 +47,7 @@ export default function Blog() {
         blog_category_array: ["sci/fi","Latest"],
       },
       blog_engagement: { likes: 282, reads: 3388 },
+      blog_thumbnail: "https://www.shutterstock.com/image-photo/portrait-beige-cat-shocked-expression-600nw-2319422905.jpg",
       blog_markup:
         "<ul><li><p><strong><em>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem repudiandae similique earum quasi dolore nisi? Perspiciatis hic expedita et! Magnam ducimus sapiente mollitia eaque, excepturi quidem necessitatibus doloribus enim nihil laudantium esse, expedita itaque!</em></strong></p></li></ul>",
     },

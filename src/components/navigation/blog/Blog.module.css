@@ -2,24 +2,25 @@
     background: linear-gradient(
       227.38deg,
       #e71d36,
-      #f46036,
+      #f49236,
       #e71d36
     );
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    background-clip: text;
 }
 
 #tag-background{
   background:linear-gradient(
     227.38deg,
     #e71d36,
-    #f46036,
+    #f49236,
     #e71d36
   ) ; 
 }
 #tag {
   
-  border: 5px solid transparent;
-  border-image-slice: 1%;
-  border-radius: 100px;
+  background: linear-gradient(227.38deg, #e71d36, #f4a836, #e71d36);
+  -webkit-background-clip: text;
+  color: transparent;
 }

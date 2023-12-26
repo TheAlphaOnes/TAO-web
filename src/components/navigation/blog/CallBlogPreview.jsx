@@ -24,9 +24,10 @@ export default function CallBlogPreview({ blog }) {
   ];
 
   const day = timestamp.getDate().toString().padStart(2, "0");
-  const month = months[timestamp.getMonth()];
+  const month = timestamp.getMonth();
+  const year = timestamp.getFullYear().toString();
 
-  const date = { day, month };
+  const date = { day, month , year};
 
 
   // blog title and blog category //
