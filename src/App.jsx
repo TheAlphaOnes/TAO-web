@@ -7,6 +7,7 @@ import Members from "./pages/Members";
 import Contact from "./components/navigation/contact/Contact";
 import Error from "./components/commons/Error";
 import Blog from "./pages/Blog";
+import ReadBlog from "./pages/ReadBlog";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="members" element={<Members />} />
             <Route path="contact" element={<Contact />} />
             <Route path="blog" element={<Blog/>}/>
+            <Route path="read_blog" element={<ReadBlog/>}/>
           </Route>
         </Routes>
       </BrowserRouter>
