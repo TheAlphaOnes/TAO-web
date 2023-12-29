@@ -115,13 +115,14 @@ export default function Blog() {
       ) : (
         // below this is Non-mobile view
         <div className="flex min-h-screen w-full ">
-          <div className="w-9/12 h-full">
+          <div className="w-9/12  h-full">
+            <div className="w-fit p-4">
             <TopicFilter setFilter={setFilter} filter={filter}/>
               {blogs.map((blog) => (
                 <div key={blog.id}>
                   <CallBlogPreview blog={blog} />
                 </div>
-              ))}
+              ))}</div>
           </div>
 
           <div className="flex pl-3 flex-col justify-center w-3/12 min-h-screen h-full border-l-2 border-indigo-800 border-opacity-30 my-10">

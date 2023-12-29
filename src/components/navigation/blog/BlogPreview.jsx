@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import useIsMobile from "../../../hooks/useIsMobile";
 import { Link } from "react-router-dom";
+import {Tag,InnerContent} from "./commonBlog"
 
 import upload from "../../../assets/img/upload.svg";
 import like from "../../../assets/img/like.svg";
@@ -13,7 +14,7 @@ import { supabase } from "../../../services/supbase";
 export default function BlogPreview({
   // props coming from blog.jsx//send date as a pair like this "date={day:19,month:DEC}"
   date,
-  authorName = "@unknown", //not passed
+  authorName = "@unknownAuthor", //not passed
   title,
   tags,
   likes,
@@ -52,8 +53,8 @@ export default function BlogPreview({
             </div>
             {!isMobile && (
               <div className="flex justify-end">
-                <div className=" relative w-4 -rotate-90 text-xs  top-32 ">
-                  {authorName}
+                <div className=" relative w-4 -rotate-90 text-xs  top-[5.5rem] ">
+                  {authorName.substring(0,14)}
                 </div>
               </div>
             )}
@@ -93,27 +94,13 @@ export default function BlogPreview({
                   </div>
                 </div>
                 <div className="pb-2 max-h-44 text-sm font-light-300 first-letter:first-line: hidden md:block">
-                  <span
-                    className="flex max-h-40 overflow-hidden "
-                    dangerouslySetInnerHTML={{ __html: content }}
-                  ></span>
+                  <InnerContent content={content}/>
                 </div>
                 <Link className=" bg-red-600 bg-clip-text text-transparent">
                   ...Read More
                 </Link>
                 <div className="relative pt-3  bottom-0 flex flex-wrap items-center gap-3">
-                  {tags.map((tag, index) => (
-                    <div
-                    className="flex overflow-hidden  rounded-3xl text-[0.7rem] font-[700] w-fit p-0.5"
-                    id={styles["tag-background"]}
-                  >
-                    <div className="bg-[#0a0e16] rounded-3xl px-5 p-0.5">
-                      <div className="" id={styles["tag"]}>
-                        {"#" + tag}
-                      </div>
-                    </div>
-                  </div>
-                  ))}
+                  <Tag tags={tags}/>
                   <div>
                     {isMobile && (
                       <div className="">
@@ -126,7 +113,7 @@ export default function BlogPreview({
             </div>
           </div>
           <div className=" flex items-center p-4">
-            <div className="w-[5.5rem] h-[5.5rem] rounded-sm flex overflow-hidden">
+            <div className="w-[8rem] h-[8rem] rounded-sm flex overflow-hidden">
               <img
                 src={imageUrl}
                 alt="image"
