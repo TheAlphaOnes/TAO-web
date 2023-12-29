@@ -45,8 +45,8 @@ export default function BlogPreview({
     <div>
       <div className="w-screen sm:w-full">
         <div className="flex md:pl-20 md:pr-7">
-          <div className=" w-fit pr-5 ">
-            <div className="text-3xl font-medium-600 w-fit">
+          <div className=" w-fit pr-2 md:pr-5 ">
+            <div className="text-xl md:text-3xl  font-medium-600 w-fit">
               {date.day}
               <br />
               {month}
@@ -64,7 +64,7 @@ export default function BlogPreview({
               <div>
                 <div className="flex ">
                   <h1
-                    className=" w-full h-fit md:h-fit  font-medium-600  text-2xl lg:text-3xl pb-3"
+                    className=" w-full h-fit md:h-fit  font-medium-600 text-lg md:text-2xl lg:text-3xl pb-3"
                     id={styles["blog-heading"]}
                   >
                     <Link
@@ -81,14 +81,14 @@ export default function BlogPreview({
                       {title}
                     </Link>
                   </h1>
-                  <div className="flex gap-2 px-2  items-start pt-4">
-                    <button className="w-5 scale-125 ">
+                  <div className="flex gap-1 px-2  items-start pt-4">
+                    <button className="w-5 ">
                       <img src={bookmark} alt="upload" />
                     </button>
-                    <button className="w-5  scale-125">
+                    <button className="w-5 ">
                       <img src={like} alt="like" />
                     </button>
-                    <button className="w-5 scale-125 ">
+                    <button className="w-5  ">
                       <img src={upload} alt="bookmark" />
                     </button>
                   </div>
@@ -113,7 +113,7 @@ export default function BlogPreview({
             </div>
           </div>
           <div className=" flex items-center p-4">
-            <div className="w-[8rem] h-[8rem] rounded-sm flex overflow-hidden">
+            <div className="w-[5rem] h-[5rem] md:w-[8rem] md:h-[8rem] rounded-sm flex overflow-hidden">
               <img
                 src={imageUrl}
                 alt="image"

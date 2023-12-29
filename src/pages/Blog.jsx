@@ -32,12 +32,12 @@ export default function Blog() {
       last_updated: "2023-01-10T08:30:00",
       blog_info: {
         blog_full_title: "let me tell you something let me tell you something",
-        blog_category_array: ["Beginner","Latest"],
+        blog_category_array: ["Beginner","Latest","Latest"],
       },
       blog_engagement: { likes: 282, reads: 3388 },
       blog_thumbnail: "https://e0.pxfuel.com/wallpapers/398/472/desktop-wallpaper-doge.jpg",
       blog_markup:
-        "<ul><li><p><strong><em>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem repudiandae similique earum quasi dolore nisi? Perspiciatis hic expedita et! Magnam ducimus sapiente mollitia eaque, excepturi quidem necessitatibus doloribus enim nihil <br/>laudantium esse, expedita itaque!</em></strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem repudiandae similique earum quasi dolore nisi? Perspiciatis hic expedita et! Magnam ducimus sapiente mollitia eaque, excepturi quidem necessitatibus doloribus enim nihil laudantium esse, expedita itaqueLorem ipsum, dolor sit amet consectetur adipisicing elit. Autem repudiandae <br/> similique earum quasi dolore nisi? Perspiciatis hic expedita et! Magnam ducimus sapiente mollitia eaque, excepturi quidem necessitatibus doloribus enim nihil laudantium esse, expedita itaqueLorem ipsum, dolor sit amet consectetur adipisicing elit. Autem repudiandae similique earum quasi dolore nisi? Perspiciatis hic <br/> expedita et! Magnam ducimus sapiente mollitia eaque, excepturi quidem necessitatibus doloribus enim nihil laudantium esse, expedita itaqueLorem ipsum, dolor sit amet consectetur adipisicing elit. Autem repudiandae similique earum quasi dolore nisi? Perspiciatis hic expedita et! Magnam ducimus sapiente mollitia eaque, excepturi quidem necessitatibus doloribus enim nihil laudantium esse, expedita itaque</p></li></ul>",
+        "<ul><li><p>In a city dominated by Godzilla's destructive might, an unexpected hero emerged—Dogzilla, a canine with extraordinary powers. This four-legged savior trotted fearlessly into the chaos, tail wagging and ears perked. With a bark that rivaled thunder, Dogzilla faced Godzilla in an epic showdown. Miraculously, their encounter turned playful, bringing unexpected joy to the city. Godzilla and Dogzilla became an unlikely duo, guarding the metropolis with an unconventional harmony.</p></li></ul>",
     },{
       id: 3,
       created_at: "2023-12-08T18:54:21.334473+00:00",
@@ -72,7 +72,7 @@ export default function Blog() {
   return (
     // below this is mobile view
     
-    <div className="bg-[#0a0e16]">
+    <div className="bg-[#0a0e16] overflow-x-auto">
       {isMobile ? (
         <div>
           <div className="flex pb-20 w-full ">
