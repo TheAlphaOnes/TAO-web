@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
 import styles from "../components/navigation/blog/Blog.module.css";
 import Tag from "../components/navigation/blog/commonBlog/Tag";
@@ -18,7 +19,21 @@ export default function ReadBlog() {
 
   return (
     <div className="min-h-screen bg-[#0a0e16]">
-      <div >
+      <motion.div
+        initial={{
+          
+          scale: 0.3,
+          opacity: 0.01,
+        }}
+        whileInView={{
+          scale: 1,
+          opacity: 1,
+        }}
+        transition={{
+          duration: 0.6,
+          ease: "easeOut",
+        }}
+      >
         <div className="py-9 px-4">
           <div className="md:h-[11rem] h-[9rem] md:w-[36rem] w-full rounded-md shadow-xl bg-[#0c1321] overflow-hidden justify-center items-center flex mx-auto">
             <img
@@ -62,7 +77,7 @@ export default function ReadBlog() {
         <div className="px-2 md:px-1 md:w-[44.5rem] mx-auto flex justify-start">
           <Tag tags={tags} />
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
