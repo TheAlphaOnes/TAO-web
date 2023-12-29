@@ -3,7 +3,7 @@ import styles from "../Blog.module.css";
 
 export default function Tag({tags}) {
   return (
-    <div  className="py-4 flex justify-start gap-3 w-full ">
+    <div  className="py-4 flex flex-wrap justify-start gap-3 w-full ">
       {tags.map((tag ) => (
             <div
               className="flex overflow-hidden  rounded-3xl text-[0.7rem] font-[700] w-fit p-0.5"
