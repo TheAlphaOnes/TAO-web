@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import styles from "../components/navigation/blog/Blog.module.css";
+import Tag from "../components/navigation/blog/commonBlog/Tag";
 
 export default function ReadBlog() {
   const location = useLocation();
@@ -15,13 +16,9 @@ export default function ReadBlog() {
     imageUrl,
   } = location.state;
 
-  const logda = () => {
-    console.log(blog);
-  };
-
   return (
-    <div className="min-h-screen bg-[#0a0e16]" onClick={logda}>
-      <div>
+    <div className="min-h-screen bg-[#0a0e16]">
+      <div >
         <div className="py-9 px-4">
           <div className="md:h-[11rem] h-[9rem] md:w-[36rem] w-full rounded-md shadow-xl bg-[#0c1321] overflow-hidden justify-center items-center flex mx-auto">
             <img
@@ -56,25 +53,14 @@ export default function ReadBlog() {
           <div className="w-10 -translate-y-[7px] border-b-2"></div>
           <span>4 minutes</span>
         </div>
-        <div className="px-3 text-center ">
+        <div className="px-3">
           <div
             className="w-full md:w-[44.5rem] text-sm font-light-300 mx-auto "
             dangerouslySetInnerHTML={{ __html: content }}
           ></div>
         </div>
-        <div className=" md:w-[44.5rem] py-4 flex gap-3 w-full  mx-auto">
-          {tags.map((tag, index) => (
-            <div
-              className="flex overflow-hidden  rounded-3xl text-[0.7rem] font-[700] w-fit p-0.5"
-              id={styles["tag-background"]}
-            >
-              <div className="bg-[#0a0e16] rounded-3xl px-5 p-0.5">
-                <div className="" id={styles["tag"]}>
-                  {"#" + tag}
-                </div>
-              </div>
-            </div>
-          ))}
+        <div className="px-2 md:px-1 md:w-[44.5rem] mx-auto flex justify-start">
+          <Tag tags={tags} />
         </div>
       </div>
     </div>
