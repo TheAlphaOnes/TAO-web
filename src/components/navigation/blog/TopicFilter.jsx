@@ -5,7 +5,7 @@ export default function TopicFilter({filter,setFilter}) {
   return (
     <div>
       <div className="py-12 px-3  md:px-32">
-        <ul className="flex md:gap-4 gap-2  w-fit h-6 text-gray-500 text-sm border-indigo-800 border-b-2 border-opacity-30 ">
+        <ul className="flex md:gap-4 gap-[5px]  w-fit h-6 text-gray-500 text-[9px] md:text-sm border-indigo-800 border-b-2 border-opacity-30 ">
           <li className="">
             <button
               className={`px-1 ${
