@@ -1,4 +1,5 @@
 import styles from "./About.module.css";
+import { motion } from "framer-motion";
 
 function About() {
   function handleMouseOver(e) {
@@ -19,7 +20,21 @@ function About() {
     <>
       <div id="about-section-to-scroll-down">
         <section id={styles.about}>
-          <section className="text-white body-font">
+          <motion.section
+            initial={{
+              x: -200,
+              opacity: 0.3,
+            }}
+            whileInView={{
+              x: 0,
+              opacity: 1,
+            }}
+            transition={{
+              duration: 0.6,
+              ease: "linear",
+            }}
+            className="text-white body-font"
+          >
             <div className="container flex flex-wrap px-5 py-24 pb-0 mx-auto items-center">
               <div className="md:w-12/12 md:pr-12 md:py-5  md:border-b-0  md:mb-0 pb-10  ">
                 <h1
@@ -39,9 +54,21 @@ function About() {
                 </p>
               </div>
             </div>
-          </section>
+          </motion.section>
           <section>
-            <div
+            <motion.div
+              initial={{
+                y: 50,
+                opacity: 0,
+              }}
+              whileInView={{
+                x: 0,
+                opacity: 1,
+              }}
+              transition={{
+                duration: 0.7,
+                ease: "easeInOut",
+              }}
               id={styles["intro-box-con"]}
               className="con-about flex flex-wrap"
             >
@@ -117,7 +144,7 @@ function About() {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </section>
         </section>
       </div>
