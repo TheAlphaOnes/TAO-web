@@ -39,9 +39,8 @@ export default function BlogPreview({
   ];
 
   const month = months[date.month];
-  
+
   return (
-    <div>
       <div className="w-screen sm:w-full">
         <motion.div
           initial={{
@@ -56,10 +55,10 @@ export default function BlogPreview({
             duration: 0.4,
             ease: "linear",
           }}
-          className="flex md:pl-16 md:pr-14 "
+          className="flex mx-auto w-fit md:pl-16 md:pr-14 "
         >
           <div className=" w-fit pr-2 md:pr-5 ">
-            <div className="text-xl md:text-3xl  font-medium-600 w-fit">
+            <div className="text-lg md:text-3xl  font-medium-600 w-fit">
               {date.day}
               <br />
               {month}
@@ -77,7 +76,7 @@ export default function BlogPreview({
               <div>
                 <div className="flex ">
                   <h1
-                    className=" w-full h-fit md:h-fit  font-medium-600 text-lg md:text-2xl lg:text-3xl pb-3"
+                    className=" w-full h-fit md:h-fit  font-medium-600 text-md md:text-2xl lg:text-3xl pb-3"
                     id={styles["blog-heading"]}
                   >
                     <Link
@@ -96,7 +95,7 @@ export default function BlogPreview({
                       {title}
                     </Link>
                   </h1>
-                  <div className="flex gap-1 px-2  items-start pt-4">
+                  <div className="hidden md:flex gap-1 px-2  items-start pt-4">
                     <button className="w-5 ">
                       <img src={bookmark} alt="upload" />
                     </button>
@@ -111,24 +110,18 @@ export default function BlogPreview({
                 <div className="pb-2 max-h-44 text-sm font-light-300 first-letter:first-line: hidden md:block">
                   <InnerContent content={content} />
                 </div>
-                <Link className=" bg-red-600 bg-clip-text text-transparent">
+                <Link className="hidden md:block bg-red-600 bg-clip-text text-transparent">
                   ...Read More
                 </Link>
-                <div className="relative pt-3  bottom-0 flex flex-wrap items-center gap-3">
-                  <Tag tags={tags} />
-                  <div>
-                    {isMobile && (
-                      <div className="">
-                        <div className=" relative w-4 ">{authorName}</div>
-                      </div>
-                    )}
-                  </div>
+                <div className=" md:pt-3 bottom-0 flex flex-wrap items-center md:gap-3">
+                  <Tag tags={tags} authorName={authorName} />
+                  
                 </div>
               </div>
             </div>
           </div>
-          <div className=" flex items-center p-1">
-            <div className="w-[5rem] h-[5rem] lg:w-[8rem] lg:h-[8rem] rounded-sm flex overflow-hidden">
+          <div className=" flex items-center md:p-1">
+            <div className="w-[4rem] h-[4rem] lg:w-[8rem] lg:h-[8rem] rounded-sm flex overflow-hidden">
               <img
                 src={imageUrl}
                 alt="image"
@@ -138,6 +131,5 @@ export default function BlogPreview({
           </div>
         </motion.div>
       </div>
-    </div>
   );
 }
