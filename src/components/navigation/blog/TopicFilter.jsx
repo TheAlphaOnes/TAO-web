@@ -4,13 +4,13 @@ export default function TopicFilter({filter,setFilter}) {
   
   return (
     <div>
-      <div className="py-12 px-3  md:px-32">
-        <ul className="flex md:gap-4 gap-[5px]  w-fit h-6 text-gray-500 text-[9px] md:text-sm border-indigo-800 border-b-2 border-opacity-30 ">
+      <div className="py-4 md:py-12   md:px-32">
+        <ul className="flex md:gap-4 gap-[2px] whitespace-nowrap  w-fit h-6 text-gray-500 text-[10px] md:text-sm border-indigo-800 border-b-2 border-opacity-30 ">
           <li className="">
             <button
               className={`px-1 ${
                 filter === "Latest" &&
-                "-translate-y-[3px] pb-1 border-b-4 border-red-500"
+                "-translate-y-[1px] md:-translate-y-[3px] pb-[8px] md:pb-[5px] border-b-4 border-red-500"
               }`}
               onClick={() => setFilter("Latest")}
             >
@@ -21,7 +21,7 @@ export default function TopicFilter({filter,setFilter}) {
             <button
               className={`px-1 ${
                 filter === "Programming" &&
-                "-translate-y-[3px] pb-1 border-b-4 border-red-500"
+                "-translate-y-[1px] md:-translate-y-[3px] pb-[8px] md:pb-[5px] border-b-4 border-red-500"
               }`}
               onClick={() => setFilter("Programming")}
             >
@@ -32,7 +32,7 @@ export default function TopicFilter({filter,setFilter}) {
             <button
               className={`px-1 ${
                 filter === "Beginner" &&
-                "-translate-y-[3px] pb-1 border-b-4 border-red-500"
+                "-translate-y-[1px] md:-translate-y-[3px] pb-[8px] md:pb-[5px] border-b-4 border-red-500"
               }`}
               onClick={() => setFilter("Beginner")}
             >
@@ -43,7 +43,7 @@ export default function TopicFilter({filter,setFilter}) {
             <button
               className={` px-1 ${
                 filter === "Tutorial" &&
-                "-translate-y-[3px] pb-1 border-b-4 border-red-500"
+                "-translate-y-[1px] md:-translate-y-[3px] pb-[8px] md:pb-[5px] border-b-4 border-red-500"
               }`}
               onClick={() => setFilter("Tutorial")}
             >
@@ -54,7 +54,7 @@ export default function TopicFilter({filter,setFilter}) {
             <button
               className={` px-1 ${
                 filter === "Story" &&
-                "-translate-y-[3px] pb-1 border-b-4 border-red-500"
+                "-translate-y-[1px] md:-translate-y-[3px] pb-[8px] md:pb-[5px] border-b-4 border-red-500"
               }`}
               onClick={() => setFilter("Story")}
             >
@@ -65,7 +65,7 @@ export default function TopicFilter({filter,setFilter}) {
             <button
               className={` px-1 ${
                 filter === "How-we" &&
-                "-translate-y-[3px] pb-1 border-b-4 border-red-500"
+                "-translate-y-[1px] md:-translate-y-[3px] pb-[8px] md:pb-[5px] border-b-4 border-red-500"
               }`}
               onClick={() => setFilter("How-we")}
             >

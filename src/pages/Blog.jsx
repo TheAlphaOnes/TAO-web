@@ -185,7 +185,7 @@ export default function Blog() {
             }}
             className="w-9/12  h-full "
           >
-            <div className="w-fit p-4">
+            <div className="w-full p-4">
               <TopicFilter setFilter={setFilter} filter={filter} />
               {blogs.map((blog) => (
                 <div key={blog.id}>

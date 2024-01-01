@@ -49,7 +49,7 @@ function Activities() {
             opacity: 0,
           }}
           whileInView={{
-            x: 0,
+            y: 0,
             opacity: 1,
           }}
           transition={{
