@@ -2,11 +2,8 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import useIsMobile from "../../../hooks/useIsMobile";
 import { Link } from "react-router-dom";
-import { Tag, InnerContent } from "./commonBlog";
 
-import upload from "../../../assets/img/upload.svg";
-import like from "../../../assets/img/like.svg";
-import bookmark from "../../../assets/img/bookmark.svg";
+import { Tag, InnerContent ,EngagementButtons } from "./commonBlog";
 
 import styles from "./Blog.module.css";
 
@@ -20,6 +17,8 @@ export default function BlogPreview({
   reads,
   content,
   imageUrl,
+  time=4,
+  blogLink="https//jo bhi link hai",
 }) {
   const isMobile = useIsMobile();
 
@@ -41,22 +40,23 @@ export default function BlogPreview({
   const month = months[date.month];
 
   return (
-      <div className="w-screen sm:w-full">
-        <motion.div
-          initial={{
-            scale: 0.95,
-            opacity: 0.6,
-          }}
-          whileInView={{
-            scale: 1,
-            opacity: 1,
-          }}
-          transition={{
-            duration: 0.4,
-            ease: "linear",
-          }}
-          className="flex mx-auto w-fit md:pl-16 md:pr-14 "
-        >
+    <div className="min-w-[290px] ">
+      <motion.div
+        initial={{
+          scale: 0.95,
+          opacity: 0.6,
+        }}
+        whileInView={{
+          scale: 1,
+          opacity: 1,
+        }}
+        transition={{
+          duration: 0.4,
+          ease: "linear",
+        }}
+        className="flex justify-evenly"
+      >
+        {!isMobile && (
           <div className=" w-fit pr-2 md:pr-5 ">
             <div className="text-lg md:text-3xl  font-medium-600 w-fit">
               {date.day}
@@ -71,65 +71,62 @@ export default function BlogPreview({
               </div>
             )}
           </div>
-          <div>
-            <div className="flex">
-              <div>
-                <div className="flex ">
-                  <h1
-                    className=" w-full h-fit md:h-fit  font-medium-600 text-md md:text-2xl lg:text-3xl pb-3"
-                    id={styles["blog-heading"]}
+        )}
+        <div>
+          <div className="flex">
+            <div>
+              <div className="flex justify-between">
+                <h1
+                  className=" w-fit h-fit  font-medium-600 text-md md:text-2xl lg:text-3xl md:pb-3"
+                  id={styles["blog-heading"]}
+                >
+                  <Link
+                    to={"/read_blog"}
+                    state={{
+                      date,
+                      authorName, //not passed
+                      title,
+                      tags,
+                      likes,
+                      reads,
+                      content,
+                      imageUrl,
+                      time,
+                      blogLink
+                    }}
                   >
-                    <Link
-                      to={"/read_blog"}
-                      state={{
-                        date,
-                        authorName, //not passed
-                        title,
-                        tags,
-                        likes,
-                        reads,
-                        content,
-                        imageUrl,
-                      }}
-                    >
-                      {title}
-                    </Link>
-                  </h1>
-                  <div className="hidden md:flex gap-1 px-2  items-start pt-4">
-                    <button className="w-5 ">
-                      <img src={bookmark} alt="upload" />
-                    </button>
-                    <button className="w-5 ">
-                      <img src={like} alt="like" />
-                    </button>
-                    <button className="w-5  ">
-                      <img src={upload} alt="bookmark" />
-                    </button>
-                  </div>
+                    {title}
+                  </Link>
+                </h1>
+                <div>
+                  <EngagementButtons blogLink={blogLink}/>
                 </div>
-                <div className="pb-2 max-h-44 text-sm font-light-300 first-letter:first-line: hidden md:block">
-                  <InnerContent content={content} />
-                </div>
-                <Link className="hidden md:block bg-red-600 bg-clip-text text-transparent">
-                  ...Read More
-                </Link>
-                <div className=" md:pt-3 bottom-0 flex flex-wrap items-center md:gap-3">
-                  <Tag tags={tags} authorName={authorName} />
-                  
-                </div>
+              </div>
+              <div className="font-quicksand  max-h-44 text-sm font-light-300 hidden md:block">
+                <InnerContent content={content} />
+              </div>
+              <Link className="hidden md:block bg-red-600 bg-clip-text text-transparent">
+                ...read more
+              </Link>
+              {isMobile && (<span className="text-[0.7rem] font-[500] text-[#61707D]">
+                {date.day}.{date.month + 1}.{date.year}
+              </span>)}
+              <div className=" md:pt-3 flex flex-wrap items-center md:gap-3">
+                <Tag tags={tags} authorName={authorName} reads={reads} time={time}/>
               </div>
             </div>
           </div>
-          <div className=" flex items-center md:p-1">
-            <div className="w-[4rem] h-[4rem] lg:w-[8rem] lg:h-[8rem] rounded-sm flex overflow-hidden">
-              <img
-                src={imageUrl}
-                alt="image"
-                className="bg-blue-900 w-full h-full"
-              />
-            </div>
+        </div>
+        <div className=" flex items-center md:px-4">
+          <div className="w-[5rem] h-[5rem] lg:w-[8rem] lg:h-[8rem] rounded-sm flex overflow-hidden">
+            <img
+              src={imageUrl}
+              alt="image"
+              className="bg-blue-900 w-full h-full"
+            />
           </div>
-        </motion.div>
-      </div>
+        </div>
+      </motion.div>
+    </div>
   );
 }
