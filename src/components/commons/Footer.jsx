@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import styles from "./Footer.module.css";
 import Logo from "./Logo";
+import { motion } from "framer-motion";
 
 // social icons images
 import instagram from "../../assets/img/insta-foot.svg";
@@ -54,7 +55,21 @@ const credits = [
 
 function Footer() {
   return (
-    <footer className={styles.footer}>
+    <motion.footer
+    initial={{
+      y: 125,
+      opacity: 1,
+    }}
+    whileInView={{
+      y: 0,
+      opacity: 1,
+    }}
+    transition={{
+      type:'spring',
+      stiffness: 110,
+      damping: 7.5,
+    }}
+     className={styles.footer}>
       <div id={styles["foot-1"]}>
         <div className="max-w-7xl mb-16 m-auto pt-10 flex justify-between flex-wrap">
           <div className="max-w-sm mt-8">
@@ -70,7 +85,7 @@ function Footer() {
           <Credits />
         </div>
       </div>
-    </footer>
+    </motion.footer>
   );
 }
 
