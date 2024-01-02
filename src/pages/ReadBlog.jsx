@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
-import {Tag} from "../components/navigation/blog/commonBlog"
+import styles from "../components/navigation/blog/Blog.module.css";
+import { EngagementButtons } from "../components/navigation/blog/commonBlog";
+import useIsMobile from "../hooks/useIsMobile";
 
 export default function ReadBlog() {
   const location = useLocation();
@@ -18,11 +20,12 @@ export default function ReadBlog() {
     blogLink,
   } = location.state;
 
+  const isMobile = useIsMobile()
+
   return (
-    <div className="min-h-screen min-w-[270px] max-w-screen bg-[#0a0e16]">
+    <div className="min-h-screen pb-4 min-w-[270px] max-w-screen bg-[#0a0e16]">
       <motion.div
         initial={{
-          
           scale: 0.3,
           opacity: 0.01,
         }}
@@ -35,39 +38,62 @@ export default function ReadBlog() {
           ease: "easeOut",
         }}
       >
-        <div className="py-9 px-4">
-          <div className="md:h-[11rem] h-[9rem] md:w-[36rem] w-full rounded-md shadow-xl bg-[#0c1321] overflow-hidden justify-center items-center flex mx-auto">
+        <div className="">
+          <div className="md:h-[15rem] h-[9rem] w-fit rounded-md shadow-xl overflow-hidden justify-center items-center flex mx-auto">
             <img
               src={imageUrl}
               alt="topic imsge"
-              className="object-cover bg-[#0a0e16]"
+              className="object-cover w-[320px] h-[78.15px] md:w-[782px] md:h-[191px]"
             />
-            <div className="absolute  flex flex-col items-center" style={{textShadow:'2px 2px 4px rgba(0, 0, 0, 1)', }}>
-              <div className="text-[0.9rem] md:text-[1.2rem] px-5 font-IBM md:w-[28rem] text-center">
+            <div
+              className="absolute  flex flex-col items-center"
+              style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 1)" }}
+            >
+              <div className="font-[400] text-[9px] md:text-[24px] px-5 font-IBM  text-center">
                 {title}
               </div>
-              <div className="text-[0.7rem] md:text-[1rem] ont-IBM px-4">
-                {authorName}
+              <div className="text-[6px] md:text-[15px] ont-IBM px-4">
+                by {authorName}
               </div>
             </div>
           </div>
         </div>
-        <div className="flex gap-2 px-2 w-full md:w-[44.5rem] text-[0.7rem] font-[700] text-[#61707D] mx-auto  pb-2">
-          <span className="">
-            {date.day}.{date.month + 1}.{date.year}
-          </span>
-          <div className="w-10 -translate-y-[7px] border-b-2"></div>
-          <span>4 minutes</span>
+        <div className=" w-[300px] md:w-[782px]  mx-auto md:px-0">
+          <div className="flex gap-2 w-full font-[400] md:font-[700] text-[6px] md:text-[12px]  text-[#61707D] mx-auto  pb-2">
+            <span className="">
+              {date.day}.{date.month + 1}.{date.year}
+            </span>
+            <div className="w-[12px] md:w-[35px] -translate-y-[4px] md:-translate-y-[8px]  border-b-2 border-gray-600"></div>
+            <span>4 minutes</span>
+          </div>
+          <div className="">
+            <div
+              className="w-full  text-[7px] md:text-[15px] font-quicksand leading-[25px] mx-auto "
+              dangerouslySetInnerHTML={{ __html: content }}
+            ></div>
+          </div>
         </div>
-        <div className="px-3">
-          <div
-            className="w-full md:w-[44.5rem] text-sm font-quicksand leading-7 mx-auto "
-            dangerouslySetInnerHTML={{ __html: content }}
-          ></div>
-        </div>
-        <div className="md:w-[44.5rem] mx-auto justify-start pt-2 md:pt-3 flex flex-wrap items-center md:gap-3">
-                <Tag tags={tags} authorName={authorName} reads={reads} time={time}/>
+        <div className="w-[300px] md:w-[782px]  mx-auto md:px-0">
+          <div className="font-[400] md:font-[450] text-[9px] md:text-[15px] py-[5px] md:py-0 md:pt-[10px]">{authorName}</div>
+          <div className="md:w-[44.5rem] justify-start md:pt-3 flex flex-wrap items-center gap-[4px] md:gap-3">
+            {tags.map((tag) => (
+              <div
+                key={tag} //key is tag since each tag is unique for a post may show warning during testing
+                className="flex items-center overflow-hidden h-[14px] md:h-[21px] rounded-[100px]  p-[1px] "
+                id={styles["tag-background"]}
+              >
+                <div className="bg-[#0a0e16] rounded-[100px] text-[5px] md:text-[9px] font-[500] px-2 md:px-4  h-[12px] md:h-[19px] flex items-center -translate-y-[0.25px] md:translate-y-0">
+                  <div className="" id={styles["tag"]}>
+                    {"#" + tag}
+                  </div>
+                </div>
               </div>
+            ))}
+            <div className="scale-75 -translate-y-[2px]">
+              <EngagementButtons blogLink={blogLink}/>
+            </div>
+          </div>
+        </div>
       </motion.div>
     </div>
   );
