@@ -48,7 +48,7 @@ export default function CallBlogPreview({ blog }) {
  
   return (
     <>
-      <div className="py-10">
+      <div className="py-5">
         <BlogPreview
           date={date}
           title={title}

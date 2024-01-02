@@ -143,7 +143,7 @@ export default function Blog() {
           <div>
             <div className="flex flex-wrap justify-start items-start h-full border-t-2 border-indigo-800 border-opacity-30 mx-6">
               <div className="w-full sm:w-1/2">
-                <h1 className="text-3xl text-center py-3">Staff Picks</h1>
+                <h1 className="text-[15px] font-[700] font-quicksand text-center py-3">Staff Picks</h1>
 
                 {/* //loop on staff picks dont forget to copy below */}
 
@@ -155,7 +155,7 @@ export default function Blog() {
               </div>
 
               <div className=" w-full sm:w-1/2">
-                <h1 className="text-3xl text-center py-3">Other Writers</h1>
+                <h1 className="text-[15px] font-[700] font-quicksand text-center py-3">Other Writers</h1>
 
                 {/* //loop on other writters dont forget to copy below */}
 
@@ -183,7 +183,7 @@ export default function Blog() {
               duration: 0.5,
               ease: "easeInOut",
             }}
-            className="w-9/12  h-full "
+            className="w-10/12  h-full "
           >
             <div className="w-full p-4">
               <TopicFilter setFilter={setFilter} filter={filter} />
@@ -208,10 +208,10 @@ export default function Blog() {
               duration: 0.5,
               ease: "easeOut",
             }}
-            className=" flex pl-3 flex-col justify-center w-3/12 min-h-screen h-full border-l-2 border-indigo-800 border-opacity-30 my-10"
+            className=" flex pl-3 flex-col justify-center w-2/12 min-h-screen h-full border-l-2 border-indigo-800 border-opacity-30 my-10"
           >
             <div className=" w-full">
-              <h1 className="text-3xl text-center py-3">Staff Picks</h1>
+              <h1 className="text-[15px] font-[700] font-quicksand text-center py-3">Staff Picks</h1>
               <StaffPicks
                 imageUrl={"some url"}
                 authorName={"@author name"}
@@ -220,7 +220,7 @@ export default function Blog() {
             </div>
 
             <div className="pt-10 w-full">
-              <h1 className="text-3xl text-center py-3">Other Writers</h1>
+              <h1 className="text-[15px] font-[700] font-quicksand text-center py-3">Other Writers</h1>
               <OtherWriters
                 imageUrl={"imageUrl"}
                 authorName={"@theAuthorOfthis"}
