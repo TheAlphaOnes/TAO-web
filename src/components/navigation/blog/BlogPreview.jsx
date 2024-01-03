@@ -98,7 +98,7 @@ export default function BlogPreview({
                     {title}
                   </Link>
                 </h1>
-                <div className="scale-75 md:scale-90 px-3  ">
+                <div className="scale-110 md:scale-90 px-1 md:px-3  ">
                   <EngagementButtons blogLink={blogLink}/>
                 </div>
               </div>

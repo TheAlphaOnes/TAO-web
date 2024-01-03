@@ -16,7 +16,7 @@ function EngagementButtons({blogLink , isHidden=false }) {
       }
   return (
     <div >
-      <div className={`${isHidden && "hidden"} flex gap-[4px] md:gap-[8px]  items-start pt-[6px] md:pt-[9px]`}>
+      <div className={`${isHidden && "hidden"} flex gap-[7px] md:gap-[8px]  items-start pt-[6px] md:pt-[9px]`}>
         <a className="w-fit hover:cursor-pointer" title="Bookmark">
           <img src={bookmark} alt="upload" className="active:bg-indigo-900 active:-translate-y-1"/>
         </a>
